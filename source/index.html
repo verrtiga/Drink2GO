@@ -52,53 +52,120 @@
         </div>
       </section>
     </div>
-      <section class="advantages global-container">
-        <h2 class="advantages__title">Главные причины выбрать Drink2Go</h2>
-        <ul class="advantages__list">
-          <li class="advantages__item">
-            <div class="advantages-container">
-              <h3 class="advantages__title">Скорость</h3>
-              <p class="advantages__description">Готовый напиток всегда под рукой — просто открой банку</p>
-               </div>
-          </li>
-          <li class="advantages__item">
-            <div class="advantages-container">
-           <h3 class="advantages__title">Удобство</h3>
-           <p class="advantages__description">Легко помещается и в карман,
-            и в маленькую сумочку</p>
-            </div>
-          </li>
-          <li class="advantages__item">
-            <div class="advantages-container">
-              <h3 class="advantages__title">Бодрость</h3>
-              <p class="advantages__description">Сбалансированная доза кофеина даст мощный заряд энергии</p>
-               </div>
-          </li>
-          <li class="advantages__item">
-            <div class="advantages-container">
-              <h3 class="advantages__title">Экологичность</h3>
-              <p class="advantages__description">Вся упаковка сделана
-                из перерабатываемых материалов</p>
-               </div>
-          </li>
-        </ul>
-      </section>
-      <section class="catalog">
-        <h1 class="catalog__title">Каталог кофейных напитков</h1>
-        <form class="main-form" action="https://echo.htmlacademy.ru/courses" method="get">
+    <section class="advantages global-container">
+      <h2 class="advantages__title">Главные причины выбрать Drink2Go</h2>
+      <ul class="advantages__list">
+        <li class="advantages__item">
+          <div class="advantages-container">
+            <h3 class="advantages__title">Скорость</h3>
+            <p class="advantages__description">Готовый напиток всегда под рукой — просто открой банку</p>
+          </div>
+        </li>
+        <li class="advantages__item">
+          <div class="advantages-container">
+            <h3 class="advantages__title">Удобство</h3>
+            <p class="advantages__description">Легко помещается и в карман,
+              и в маленькую сумочку</p>
+          </div>
+        </li>
+        <li class="advantages__item">
+          <div class="advantages-container">
+            <h3 class="advantages__title">Бодрость</h3>
+            <p class="advantages__description">Сбалансированная доза кофеина даст мощный заряд энергии</p>
+          </div>
+        </li>
+        <li class="advantages__item">
+          <div class="advantages-container">
+            <h3 class="advantages__title">Экологичность</h3>
+            <p class="advantages__description">Вся упаковка сделана
+              из перерабатываемых материалов</p>
+          </div>
+        </li>
+      </ul>
+    </section>
+    <section class="catalog">
+      <h2 class="catalog__title">Каталог кофейных напитков</h2>
+      <form class="main-form" action="https://echo.htmlacademy.ru/courses" method="get">
         <div class="form-price">
-         <input class="form-price__range" type="range">
-         <div class="form-price__value">
-          <label class="form-price__label">
-            <input class="catalog-input-value from" type="number" placeholder="0" value="0" min="0" name="From">
-          </label>
-          <label class="form-price__label">
-            <input class="catalog-input-value from" type="number" placeholder="900" value="900" max="900" name="To">
-          </label>
-         </div>
+          <h3 class="form-price__title">Цена</h3>
+          <input class="form-price__range" type="range">
+          <div class="form-price__value">
+            <label class="form-price__label">
+              <input class="catalog-input-value from" type="number" placeholder="0" value="0" min="0" name="From">
+            </label>
+            <label class="form-price__label">
+              <input class="catalog-input-value from" type="number" placeholder="900" value="900" max="900" name="To">
+            </label>
+          </div>
         </div>
-        </form>
-      </section>
+        <div class="form-stock">
+          <h3 class="form-stock__title">Наличие молока</h3>
+          <ul class="form-stock__list">
+            <li class="form-stock__item">
+              <label class="form-stock__label"> Неважно
+                <input class="form-stock__input" type="radio" value="No matter" name="In stock" id="Nomatter" checked>
+                <span class="form-stock__mark"></span>
+              </label>
+            </li>
+            <li class="form-stock__item">
+              <label class="form-stock__label"> Только животное
+                <input class="form-stock__input" type="radio" value="Animal" name="In stock" id="Animal">
+                <span class="form-stock__mark"></span>
+              </label>
+            </li>
+            <li class="form-stock__item">
+              <label class="form-stock__label"> Только растительное
+                <input class="form-stock__input" type="radio" value="Nature" name="In stock" id="Nature">
+                <span class="form-stock__mark"></span>
+              </label>
+            </li>
+            <li class="form-stock__item">
+              <label class="form-stock__label"> Без молока
+                <input class="form-stock__input" type="radio" value="No milk" name="In stock" id="Nomilk">
+                <span class="form-stock__mark"></span>
+              </label>
+            </li>
+          </ul>
+        </div>
+        <div class="form-country">
+          <h3 class="form-country__title">Страна произрастания</h3>
+          <ul class="form-country__list">
+            <li class="form-country__item">
+            <label class="form-country__label"> Бразилия
+              <input class="form-country__switch" type="checkbox">
+              <span class="form-country__switch-slider"></span>
+            </label>
+            </li>
+            <li class="form-country__item">
+              <label class="form-country__label"> Эфиопия
+                <input class="form-country__switch" type="checkbox">
+                <span class="form-country__switch-slider"></span>
+              </label>
+            </li>
+            <li class="form-country__item">
+              <label class="form-country__label"> Колумбия
+                <input class="form-country__switch" type="checkbox">
+                <span class="form-country__switch-slider"></span>
+              </label>
+            </li>
+            <li class="form-country__item">
+              <label class="form-country__label"> Коста-Рика
+                <input class="form-country__switch" type="checkbox">
+                <span class="form-country__switch-slider"></span>
+              </label>
+            </li>
+            <li class="form-country__item">
+              <label class="form-country__label"> Перу
+                <input class="form-country__switch" type="checkbox">
+                <span class="form-country__switch-slider"></span>
+              </label>
+            </li>
+          </ul>
+        </div>
+        <button class="button main-form__apply" type="submit">Применить фильтр</button>
+        <button class="button main-form__reset" type="reset">Сбросить фильтр</button>
+      </form>
+    </section>
   </main>
 
   <script src="./js/script.js" defer></script>
