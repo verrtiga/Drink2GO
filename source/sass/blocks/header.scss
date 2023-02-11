@@ -2,11 +2,14 @@
 
 .header {
   box-sizing: border-box;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .header-logo {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .header__main-logo {
@@ -20,6 +23,7 @@
 }
 
 .header__toggle-menu {
+  position: relative;
   cursor: pointer;
   top: 1px;
   right: 0;
@@ -35,15 +39,16 @@
     display: none;
   }
 }
+
 .header__toggle-menu--close::before {
   content: "";
   position: absolute;
-  top: 1px;
+  top: 7px;
   left: 10px;
-  width: 24px;
-  height: 2px;
-  background-color: $black;
-  box-shadow: 0 8px 0 0 $black, 0 16px 0 0 $black;
+  width: 16px;
+  height: 1px;
+  background-color: #333;
+  box-shadow: 0 8px 0 0#333, 0 4px 0 0#333;
 }
 
 .header__toggle-menu--open {
@@ -67,8 +72,8 @@
     position: absolute;
     top: 1px;
     left: 10px;
-    width: 24px;
-    height: 2px;
+    width: 15px;
+    height: 1px;
     background-color: $black;
   }
 
@@ -81,6 +86,17 @@
   }
 }
 
-// .header__toggle-menu-nojs {
-//   display: none;
-// }
+.header__toggle-login {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+
+.header__toggle-order {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
