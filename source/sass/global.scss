@@ -1,0 +1,9 @@
+@use "../sass/abstract" as *;
+
+body {
+box-sizing: border-box;
+font-family: $montserrat;
+font-style: normal;
+font-size: 14px;
+line-height: 149%;
+}
