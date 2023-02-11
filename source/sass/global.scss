@@ -1,0 +1,37 @@
+@use "../sass/abstract" as *;
+
+body {
+  box-sizing: border-box;
+  font-family: $montserrat;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 149%;
+  color: $black;
+  background-color: $white;
+  margin: 0;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(1px 1px 1px 1px);
+  /* IE6, IE7 */
+  padding: 0;
+  border: 0;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
+
+.global-container {
+  margin: 0 auto;
+  padding: 0 20px;
+
+
+  @media (min-width: $tablet-width) {
+    padding: 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1280px;
+  }
+}
