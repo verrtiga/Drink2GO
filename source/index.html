@@ -15,12 +15,14 @@
     <div class="header-logo">
       <a class="header__logo" href="index.html">
         <picture>
-          <img class="header__main-logo" src="#" width="" height="" alt="">
+          <source media="(min-width: 1280px)" srcset="img/logo-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+          <img class="header__main-logo" src="img/logo-mobile.svg" width="32" height="36" alt="Логотип компании">
         </picture>
       </a>
-      <button class="header__toggle"></button>
-      <button class="header__toggle"></button>
-      <button class="header__toggle"></button>
+      <button class="header__toggle-login" type="button"></button>
+      <button class="header__toggle-order" type="button"></button>
+      <button class="header__toggle-menu header__toggle-menu--close header__toggle-menu-nojs" type="button"></button>
     </div>
     <nav class="navigation">
       <div class="navigation__container navigation__container--open">

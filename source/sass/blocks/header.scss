@@ -1,0 +1,86 @@
+@use "../abstract" as *;
+
+.header {
+  box-sizing: border-box;
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+}
+
+.header__main-logo {
+  width: 32px;
+  height: 36px;
+
+  @media (min-width: $tablet-width) {
+    width: 82px;
+    height: 36px;
+  }
+}
+
+.header__toggle-menu {
+  cursor: pointer;
+  top: 1px;
+  right: 0;
+  left: 2px;
+  height: 24px;
+  padding-top: 3px;
+  padding-left: 30px;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+.header__toggle-menu--close::before {
+  content: "";
+  position: absolute;
+  top: 1px;
+  left: 10px;
+  width: 24px;
+  height: 2px;
+  background-color: $black;
+  box-shadow: 0 8px 0 0 $black, 0 16px 0 0 $black;
+}
+
+.header__toggle-menu--open {
+  position: relative;
+  top: 9px;
+  right: -2px;
+  height: 24px;
+  padding-top: 3px;
+  padding-left: 30px;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 1px;
+    left: 10px;
+    width: 24px;
+    height: 2px;
+    background-color: $black;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}
+
+// .header__toggle-menu-nojs {
+//   display: none;
+// }
