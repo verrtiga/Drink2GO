@@ -1,7 +1,7 @@
 @use "../abstract" as *;
 
 .badge--advantages {
-  margin-left:80px;
+  margin-left:91px;
 }
 
 .advantages__title {
@@ -44,12 +44,45 @@ margin: 0;
 
 .advantages__item {
   position: relative;
+  margin-top: 100px;
 }
 
 .advantages__item--speed::before {
   content: "";
   position: absolute;
-  background-image:url(../img/speed.svg);
+  background-image: url(../../img/speed.svg);
   width: 46px;
   height: 52px;
+  bottom: 91px;
+  left: 121px;
+}
+
+.advantages__item--comfortable::before {
+  content: "";
+  position: absolute;
+  background-image: url(../../img/comfortable.svg);
+  width: 48px;
+  height: 52px;
+  bottom: 91px;
+  left: 121px;
+}
+
+.advantages__item--energy::before {
+  content: "";
+  position: absolute;
+  background-image: url(../../img/energy.svg);
+  width: 38px;
+  height: 52px;
+  bottom: 91px;
+  left: 121px;
+}
+
+.advantages__item--eco::before {
+  content: "";
+  position: absolute;
+  background-image: url(../../img/eco.svg);
+  width: 42px;
+  height: 52px;
+  bottom: 91px;
+  left: 121px;
 }
