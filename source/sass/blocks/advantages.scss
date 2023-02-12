@@ -1,0 +1,55 @@
+@use "../abstract" as *;
+
+.badge--advantages {
+  margin-left:80px;
+}
+
+.advantages__title {
+font-family: $montserrat;
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 150%;
+color: $black;
+text-align: center;
+margin: 0;
+}
+
+.advantages__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.advantages__name {
+font-family: $montserrat;
+font-style: normal;
+font-weight: 700;
+font-size: 18px;
+line-height: 178%;
+text-align: center;
+color: $black;
+margin: 0;
+}
+
+.advantages__description {
+font-family: $montserrat;
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 143%;
+text-align: center;
+margin: 0;
+}
+
+.advantages__item {
+  position: relative;
+}
+
+.advantages__item--speed::before {
+  content: "";
+  position: absolute;
+  background-image:url(../img/speed.svg);
+  width: 46px;
+  height: 52px;
+}

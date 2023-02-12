@@ -35,3 +35,16 @@ body {
     width: 1280px;
   }
 }
+
+.badge {
+  font-family: $montserrat;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 133%;
+  text-transform: uppercase;
+  color: $purple;
+  letter-spacing: 0.04em;
+  text-align: center;
+  margin-left: 113px;
+}
