@@ -57,7 +57,25 @@
   </header>
   <main>
     <div class="hero-section-wrapper">
-      <section class="hero-section global-container">
+      <section class="hero-section">
+        <!-- Slider main container -->
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">Slide 1</div>
+            <div class="swiper-slide">Slide 2</div>
+            <div class="swiper-slide">Slide 3</div>
+            ...
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+
+        </div>
         <b class="hero-section__new-item">Новинка!</b>
         <h1 class="hero-section__title">Декаф Флэт Уайт</h1>
         <p class="hero-section__description">Свежесваренный кофе без кофеина из Эфиопии с натуральным фермерским молоком
@@ -386,8 +404,8 @@
     </div>
 
   </footer>
-
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   <script src="js/script.js"></script>
-</body>
 
 </html>
