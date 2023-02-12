@@ -1,0 +1,26 @@
+@use "../abstract" as *;
+
+.swiper-pagination--disabled {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
+}
+
+.swiper-button-next::after {
+  color: $purple;
+  width: 11px;
+  margin-top:0;
+  font-size: 25px !important;
+}
+
+.swiper-button-prev::after {
+  color: $purple;
+  margin-top:0;
+  font-size: 25px !important;
+}
+
+.swiper-button-next {
+  margin:0;
+}

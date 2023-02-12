@@ -1,3 +1,17 @@
+
+const swiper = new Swiper('.swiper', {
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
+
 let nav = document.querySelector('.navigation__container');
 let toggle = document.querySelector('.header__toggle-menu');
 let head = document.querySelector('.header__toggle-menu');
