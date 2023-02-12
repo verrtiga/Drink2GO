@@ -2,4 +2,69 @@
 
 .hero-section {
   background-color: $cream;
+  box-sizing: border-box;
+}
+
+.hero-section__new-item {
+  font-family: $montserrat;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 133%;
+  text-transform: uppercase;
+  color: $purple;
+  letter-spacing: 0.04em;
+  text-align: center;
+  margin-left: 113px;
+}
+
+.hero-section__title {
+  font-family: $montserrat;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 133%;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: $black;
+  margin: 0;
+  padding: 0;
+}
+
+.hero-section__description {
+  font-family: $montserrat;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 143%;
+  text-align: center;
+  color: $black;
+  margin: 0;
+  padding: 20px 34px;
+}
+
+.hero-section__price-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-section__price {
+  font-family: $montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 160%;
+  color: $black;
+}
+
+.hero-section__sale {
+font-family: $montserrat;
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 200%;
+text-decoration-line: line-through;
+color: $purple;
+margin-right: 6px;
 }
