@@ -1,0 +1,9 @@
+@use "../abstract" as *;
+
+.swiper-pagination--disabled {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
+}
