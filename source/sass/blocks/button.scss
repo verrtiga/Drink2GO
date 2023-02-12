@@ -1,0 +1,37 @@
+@use "../abstract" as *;
+
+.button {
+  cursor: pointer;
+  border-radius: 4px;
+  background-color: $purple;
+  color: $white;
+  border-color: transparent;
+  font-family: $montserrat;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+
+}
+.button:hover {
+  background-color: $purple-light;
+}
+
+.button:focus {
+  background-color: $purple-light;
+}
+
+.button:active {
+  background-color: $purple-dark;
+}
+
+.button:disabled {
+  background-color: $grey;
+}
+
+.hero-section__button {
+  padding: 8px 20px;
+  margin-left: 20px;
+}
+

@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+.hero-section-wrapper {
+  padding-bottom: 60px;
+}
+
 .hero-section__new-item {
   font-family: $montserrat;
   font-style: normal;
@@ -29,7 +33,10 @@
   color: $black;
   margin: 0;
   padding: 0;
+  padding-left: 20px;
+  padding-right: 20px;
 }
+
 
 .hero-section__description {
   font-family: $montserrat;
@@ -47,6 +54,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-bottom: 60px;
 }
 
 .hero-section__price {
