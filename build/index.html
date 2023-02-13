@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="preload" href="fonts/montserratregular.woff2" as="font">
   <link rel="preload" href="fonts/montserratbold.woff2" as="font">
+  <link rel="preload" href="fonts/montserratsemibold.woff2" as="font">
 </head>
 
 <body class="page__body">
@@ -153,12 +154,24 @@
       </ul>
     </section>
     <section class="catalog">
+      <div class="form-container">
       <b class="badge badge--catalog">Каталог</b>
       <h2 class="catalog__title">Каталог кофейных напитков</h2>
       <form class="main-form" action="https://echo.htmlacademy.ru/courses" method="get">
         <div class="form-price">
           <h3 class="form-price__title">Цена</h3>
-          <input class="form-price__range" type="range">
+          <div class="form-price__range">
+            <div class="form-price__scale">
+              <div class="form-price__range-bar">
+                <button  type="button" class="form-price__range-toggle form-price__range-toggle--min">
+                  <span class="visually-hidden"> Минимальное значение цены.</span>
+                </button>
+                <button type="button" class="form-price__range-toggle form-price__range-toggle--max">
+                  <span class="visually-hidden"> Максимальное значение цены.</span>
+                </button>
+              </div>
+            </div>
+          </div>
           <div class="form-price__value">
             <label class="form-price__label">
               <input class="catalog-input-value from" type="number" placeholder="0" value="0" min="0" name="From">
@@ -235,6 +248,7 @@
         <button class="button main-form__apply" type="submit">Применить фильтр</button>
         <button class="button main-form__reset" type="reset">Сбросить фильтр</button>
       </form>
+      </div>
       <div class="catalog__select">
         <label for="select" class="catalog__sorting"> Сортировка </label>
         <select class="catalog__select" name="sorting" id="select">

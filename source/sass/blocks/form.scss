@@ -1,0 +1,58 @@
+@use "../abstract" as *;
+
+// form-price
+
+.form-price__title {
+  font-family: $montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+  color: $black;
+  margin: 0;
+  margin-top: 20px;
+}
+
+
+.form-price__range {
+  margin-top: 20px;
+}
+
+.form-price__scale {
+  position: relative;
+  height: 2px;
+  background-color: $grey-light;
+  width: 280px;
+}
+
+.form-price__range-bar {
+  position: absolute;
+  height: 5px;
+  opacity: 1;
+  background-color: $purple-light;
+  width: 240px;
+  ;
+}
+
+.form-price__range-toggle {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  background-color: $white;
+  border-radius: 12px;
+  cursor: pointer;
+  border: 2px solid $purple-light;
+}
+
+.form-price__range-toggle--max {
+  left: 223px;
+  top: -10px;
+}
+
+.form-price__range-toggle--min {
+  top: -10px;
+}
+
+// form-stock
+
+//form-country
