@@ -13,6 +13,7 @@
   margin-top: 20px;
 }
 
+// form-price range-bar
 
 .form-price__range {
   margin-top: 20px;
@@ -52,6 +53,57 @@
 .form-price__range-toggle--min {
   top: -10px;
 }
+
+// form-price value-window
+
+.form-price__value {
+  margin-top: 35px;
+  display: flex;
+  box-sizing: border-box;
+}
+
+.form-price__label {
+  position: relative;
+
+}
+
+.form-price__label--from {
+  margin-right: 44px;
+}
+
+.form-price__label--from::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 8px;
+  height: 2px;
+  left: 136px;
+  top: 19px;
+
+  background-color: $grey;
+}
+
+.form-price__input {
+  font-family: $montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  color: $black;
+  padding: 7px 10px;
+  width: 93px;
+  height: 19px;
+  border: 2px solid $purple-light;
+  border-radius: 4px;
+
+}
+
+.form-price__input--from {
+  margin-right: 44px;
+}
+
+
 
 // form-stock
 
