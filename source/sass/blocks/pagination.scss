@@ -1,0 +1,80 @@
+@use "../sass/abstract" as *;
+
+
+.pagination {
+  display: flex;
+  list-style-type: none;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  margin-left: 20px;
+}
+
+.pagination__item {
+  margin-right: 20px;
+}
+
+.pagination__item--last {
+  margin: 0;
+}
+
+.pagination__link {
+  text-decoration: none;
+  display: block;
+  width: 40px;
+  height: 32px;
+  font-family: $montserrat;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  color: $purple;
+  background-color: $white;
+  margin-top: 40px;
+  padding-top: 8px;
+  margin-bottom: 40px;
+  border-radius: 4px;
+}
+
+.pagination__link--current {
+  background-color: transparent;
+  font-family: $montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+  color: $black;
+}
+
+.pagination__link--arrow-left::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 10px;
+  height: 12px;
+  top: 15px;
+  left: 14px;
+  background-image: url("../../img/arrow-pagination-left.svg");
+  background-repeat: no-repeat;
+}
+
+.pagination__link--arrow-left {
+  position: relative;
+}
+
+.pagination__link--arrow-right {
+  position: relative;
+}
+
+.pagination__link--arrow-right::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 10px;
+  height: 12px;
+  top: 15px;
+  left: 14px;
+  background-image: url("../../img/arrow-pagination-right.svg");
+  background-repeat: no-repeat;
+}
