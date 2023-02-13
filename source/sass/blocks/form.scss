@@ -103,8 +103,132 @@
   margin-right: 44px;
 }
 
-
-
 // form-stock
 
+.form-stock__title {
+  font-family: $montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+  margin: 0;
+  margin-top: 23px;
+  color: $black;
+}
+
+.form-stock__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.form-stock__item {
+  font-family: $montserrat;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: $black;
+  margin-top: 22px;
+  margin-left: 44px;
+}
+
+.form-stock__mark {
+  position: absolute;
+  width: 24px;
+  left: 0;
+  height: 24px;
+  border-radius: 50%;
+  background-color: $white;
+  border: 2px solid $grey;
+  appearance: none;
+  margin-left: 20px;
+}
+
+.form-stock__input[type=radio]:checked+.form-stock__mark::before {
+  content: "";
+  position: absolute;
+  left: 4px;
+  top: 4px;
+  margin: auto;
+  width: 16px;
+  height: 16px;
+  background-color: $purple;
+  border-radius: 50%;
+}
+
+
 //form-country
+
+.form-country__title {
+  font-family: $montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+  color: $black;
+  margin: 0;
+  margin-top: 22px;
+}
+
+.form-country__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.form-country__item {
+  font-family: $montserrat;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color:$black;
+  margin-top: 21px;
+}
+
+.form-country__switch {
+  position: relative;
+  display: inline-block;
+  width: 42px;
+  height: 24px;
+  margin: 0;
+  vertical-align: top;
+  background: $grey;
+  border-radius: 30px;
+  outline: none;
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  transition: all 0.3s cubic-bezier(0.2, 0.85, 0.32, 1.2);
+ }
+
+ .form-country__switch::after{
+  content: "";
+  display: inline-block;
+  position: absolute;
+  left: 3px;
+  top: 2px;
+  width: 20px;
+  height: 20px;
+  background-color: $white;
+  border-radius: 50%;
+  transform: translateX(0);
+  transition: all 0.3s cubic-bezier(0.2, 0.85, 0.32, 1.2);
+ }
+
+ .form-country__switch:checked::after {
+  transform: translateX(calc(100% + -4px));
+  background-color: $white;
+}
+.form-country__switch:checked {
+  background-color: $purple;
+}
+
+.form-country__switch-label {
+  margin-left: 12px;
+}
+
+
+
