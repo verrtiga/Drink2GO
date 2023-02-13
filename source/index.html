@@ -155,99 +155,104 @@
     </section>
     <section class="catalog">
       <div class="form-container">
-      <b class="badge badge--catalog">Каталог</b>
-      <h2 class="catalog__title">Каталог кофейных напитков</h2>
-      <form class="main-form" action="https://echo.htmlacademy.ru/courses" method="get">
-        <div class="form-price">
-          <h3 class="form-price__title">Цена</h3>
-          <div class="form-price__range">
-            <div class="form-price__scale">
-              <div class="form-price__range-bar">
-                <button  type="button" class="form-price__range-toggle form-price__range-toggle--min">
-                  <span class="visually-hidden"> Минимальное значение цены.</span>
-                </button>
-                <button type="button" class="form-price__range-toggle form-price__range-toggle--max">
-                  <span class="visually-hidden"> Максимальное значение цены.</span>
-                </button>
+        <b class="badge badge--catalog">Каталог</b>
+        <h2 class="catalog__title">Каталог кофейных напитков</h2>
+        <form class="main-form" action="https://echo.htmlacademy.ru/courses" method="get">
+          <div class="form-price">
+            <h3 class="form-price__title">Цена</h3>
+            <div class="form-price__range">
+              <div class="form-price__scale">
+                <div class="form-price__range-bar">
+                  <button type="button" class="form-price__range-toggle form-price__range-toggle--min">
+                    <span class="visually-hidden"> Минимальное значение цены.</span>
+                  </button>
+                  <button type="button" class="form-price__range-toggle form-price__range-toggle--max">
+                    <span class="visually-hidden"> Максимальное значение цены.</span>
+                  </button>
+                </div>
               </div>
             </div>
+            <div class="form-price__value">
+              <label class="form-price__label form-price__label--from">
+                <input class="form-price__input form-price__input--from" type="number" placeholder="0" min="0"
+                  name="From">
+              </label>
+              <label class="form-price__label">
+                <input class="form-price__input" type="number" placeholder="900" value="900" max="900" name="To">
+              </label>
+            </div>
           </div>
-          <div class="form-price__value">
-            <label class="form-price__label form-price__label--from">
-              <input class="form-price__input form-price__input--from" type="number" placeholder="0"  min="0" name="From">
-            </label>
-            <label class="form-price__label">
-              <input class="form-price__input" type="number" placeholder="900" value="900" max="900" name="To">
-            </label>
+          <div class="form-stock">
+            <h3 class="form-stock__title">Наличие молока</h3>
+            <ul class="form-stock__list">
+              <li class="form-stock__item">
+                <label class="form-stock__label"> Неважно
+                  <input class="form-stock__input visually-hidden" type="radio" value="No matter" name="In stock"
+                    id="Nomatter" checked>
+                  <span class="form-stock__mark"></span>
+                </label>
+              </li>
+              <li class="form-stock__item">
+                <label class="form-stock__label"> Только животное
+                  <input class="form-stock__input visually-hidden" type="radio" value="Animal" name="In stock"
+                    id="Animal">
+                  <span class="form-stock__mark"></span>
+                </label>
+              </li>
+              <li class="form-stock__item">
+                <label class="form-stock__label"> Только растительное
+                  <input class="form-stock__input visually-hidden" type="radio" value="Nature" name="In stock"
+                    id="Nature">
+                  <span class="form-stock__mark"></span>
+                </label>
+              </li>
+              <li class="form-stock__item">
+                <label class="form-stock__label"> Без молока
+                  <input class="form-stock__input visually-hidden" type="radio" value="No milk" name="In stock"
+                    id="Nomilk">
+                  <span class="form-stock__mark"></span>
+                </label>
+              </li>
+            </ul>
           </div>
-        </div>
-        <div class="form-stock">
-          <h3 class="form-stock__title">Наличие молока</h3>
-          <ul class="form-stock__list">
-            <li class="form-stock__item">
-              <label class="form-stock__label"> Неважно
-                <input class="form-stock__input visually-hidden" type="radio" value="No matter" name="In stock" id="Nomatter" checked>
-                <span class="form-stock__mark"></span>
-              </label>
-            </li>
-            <li class="form-stock__item">
-              <label class="form-stock__label"> Только животное
-                <input class="form-stock__input visually-hidden" type="radio" value="Animal" name="In stock" id="Animal">
-                <span class="form-stock__mark"></span>
-              </label>
-            </li>
-            <li class="form-stock__item">
-              <label class="form-stock__label"> Только растительное
-                <input class="form-stock__input visually-hidden" type="radio" value="Nature" name="In stock" id="Nature">
-                <span class="form-stock__mark"></span>
-              </label>
-            </li>
-            <li class="form-stock__item">
-              <label class="form-stock__label"> Без молока
-                <input class="form-stock__input visually-hidden" type="radio" value="No milk" name="In stock" id="Nomilk">
-                <span class="form-stock__mark"></span>
-              </label>
-            </li>
-          </ul>
-        </div>
-        <div class="form-country">
-          <h3 class="form-country__title">Страна произрастания</h3>
-          <ul class="form-country__list">
-            <li class="form-country__item">
-              <div class class="form-country__container">
-                <input class="form-country__switch visually-hidden" id="switch" type="checkbox" checked>
-                <label for="switch" class="form-country__switch-label">Бразилия</label>
-              </div>
-            </li>
-            <li class="form-country__item">
-              <div class class="form-country__container">
-                <input class="form-country__switch visually-hidden" id="switch"type="checkbox">
-                <label for="switch" class="form-country__switch-label">Эфиопия</label>
-              </div>
-            </li>
-            <li class="form-country__item">
-              <div class class="form-country__container">
-                <input class="form-country__switch visually-hidden" id="switch"type="checkbox">
-                <label for="switch" class="form-country__switch-label">Колумбия</label>
-              </div>
-            </li>
-            <li class="form-country__item">
-              <div class class="form-country__container">
-                <input class="form-country__switch visually-hidden" id="switch"type="checkbox">
-                <label for="switch" class="form-country__switch-label">Коста-Рика</label>
-              </div>
-            </li>
-            <li class="form-country__item">
-              <div class class="form-country__container">
-                <input class="form-country__switch visually-hidden" id="switch"type="checkbox">
-                <label for="switch" class="form-country__switch-label">Перу</label>
-              </div>
-            </li>
-          </ul>
-        </div>
-        <button class="button main-form__apply" type="submit">Применить фильтр</button>
-        <button class="button main-form__reset" type="reset">Сбросить фильтр</button>
-      </form>
+          <div class="form-country">
+            <h3 class="form-country__title">Страна произрастания</h3>
+            <ul class="form-country__list">
+              <li class="form-country__item">
+                <div class class="form-country__container">
+                  <input class="form-country__switch visually-hidden" id="switch" type="checkbox" checked>
+                  <label for="switch" class="form-country__switch-label">Бразилия</label>
+                </div>
+              </li>
+              <li class="form-country__item">
+                <div class class="form-country__container">
+                  <input class="form-country__switch visually-hidden" id="switch" type="checkbox">
+                  <label for="switch" class="form-country__switch-label">Эфиопия</label>
+                </div>
+              </li>
+              <li class="form-country__item">
+                <div class class="form-country__container">
+                  <input class="form-country__switch visually-hidden" id="switch" type="checkbox">
+                  <label for="switch" class="form-country__switch-label">Колумбия</label>
+                </div>
+              </li>
+              <li class="form-country__item">
+                <div class class="form-country__container">
+                  <input class="form-country__switch visually-hidden" id="switch" type="checkbox">
+                  <label for="switch" class="form-country__switch-label">Коста-Рика</label>
+                </div>
+              </li>
+              <li class="form-country__item">
+                <div class class="form-country__container">
+                  <input class="form-country__switch visually-hidden" id="switch" type="checkbox">
+                  <label for="switch" class="form-country__switch-label">Перу</label>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <button class="button main-form__apply" type="submit">Применить фильтр</button>
+          <button class="button main-form__reset" type="reset">Сбросить фильтр</button>
+        </form>
       </div>
       <div class="catalog__select">
         <label for="select" class="catalog__sorting"> Сортировка </label>
@@ -263,7 +268,8 @@
           <a class="product-card__link">
             <picture>
               <source type="image/webp" srcset="img/flat-white-catalog.webp 1x, img/flat-white-catalog@2x.webp 2x">
-              <img class="product-card__img" src="img/flat-white-catalog.png" width="130" height="188" alt="Декаф Флет Уайт" srcset="img/flat-white-catalog@2x.png">
+              <img class="product-card__img" src="img/flat-white-catalog.png" width="130" height="188"
+                alt="Декаф Флет Уайт" srcset="img/flat-white-catalog@2x.png">
             </picture>
           </a>
           <div class="product-card-container">
@@ -273,15 +279,17 @@
             <p class="product-card__description">Кофе без кофеина из Эфиопии
               с натуральным фермерским молоком</p>
             <b class="product-card__price">225₽</b>
+            <button class="button product-card__button" href="#">В корзину</button>
           </div>
-          <a class="button product-card__button" href="#">В корзину</a>
+
         </article>
         <article class="product-card">
           <a class="product-card__link">
             <picture>
-            <source type="image/webp" srcset="img/flat-purple-catalog.webp 1x, img/flat-purple-catalog@2x.webp 2x">
-            <img class="product-card__img" src="img/flat-purple-catalog.png" width="130" height="188" alt="Декаф Флет Уайт" srcset="img/flat-purple-catalog@2x.png">
-          </picture>
+              <source type="image/webp" srcset="img/flat-purple-catalog.webp 1x, img/flat-purple-catalog@2x.webp 2x">
+              <img class="product-card__img" src="img/flat-purple-catalog.png" width="130" height="188"
+                alt="Декаф Флет Уайт" srcset="img/flat-purple-catalog@2x.png">
+            </picture>
           </a>
           <div class="product-card-container">
             <a class="product-card__link" href="#">
@@ -290,14 +298,15 @@
             <p class="product-card__description">Кофе без кофеина из Эфиопии
               с натуральным фермерским молоком</p>
             <b class="product-card__price">225₽</b>
+            <button class="button product-card__button" href="#">В корзину</button>
           </div>
-          <a class="button product-card__button" href="#">В корзину</a>
         </article>
         <article class="product-card">
           <a class="product-card__link">
             <picture>
               <source type="image/webp" srcset="img/flat-black-catalog.webp 1x, img/flat-black-catalog@2x.webp 2x">
-              <img class="product-card__img" src="img/flat-black-catalog.png" width="130" height="188" alt="Декаф Флет Уайт" srcset="img/flat-black-catalog@2x.png">
+              <img class="product-card__img" src="img/flat-black-catalog.png" width="130" height="188"
+                alt="Декаф Флет Уайт" srcset="img/flat-black-catalog@2x.png">
             </picture>
           </a>
           <div class="product-card-container">
@@ -307,14 +316,15 @@
             <p class="product-card__description">Кофе без кофеина из Эфиопии
               с натуральным фермерским молоком</p>
             <b class="product-card__price">225₽</b>
+            <button class="button product-card__button" href="#">В корзину</button>
           </div>
-          <a class="button product-card__button" href="#">В корзину</a>
         </article>
         <article class="product-card">
           <a class="product-card__link">
             <picture>
               <source type="image/webp" srcset="img/flat-pink-catalog.webp 1x, img/flat-pink-catalog@2x.webp 2x">
-              <img class="product-card__img" src="img/flat-pink-catalog.png" width="130" height="188" alt="Декаф Флет Уайт" srcset="img/flat-pink-catalog@2x.png">
+              <img class="product-card__img" src="img/flat-pink-catalog.png" width="130" height="188"
+                alt="Декаф Флет Уайт" srcset="img/flat-pink-catalog@2x.png">
             </picture>
           </a>
           <div class="product-card-container">
@@ -324,14 +334,15 @@
             <p class="product-card__description">Кофе без кофеина из Эфиопии
               с натуральным фермерским молоком</p>
             <b class="product-card__price">225₽</b>
+            <button class="button product-card__button" href="#">В корзину</button>
           </div>
-          <a class="button product-card__button" href="#">В корзину</a>
         </article>
         <article class="product-card">
           <a class="product-card__link">
             <picture>
               <source type="image/webp" srcset="img/flat-brown-catalog.webp 1x, img/flat-brown-catalog@2x.webp 2x">
-              <img class="product-card__img" src="img/flat-brown-catalog.png" width="130" height="188" alt="Декаф Флет Уайт" srcset="img/flat-brown-catalog@2x.png">
+              <img class="product-card__img" src="img/flat-brown-catalog.png" width="130" height="188"
+                alt="Декаф Флет Уайт" srcset="img/flat-brown-catalog@2x.png">
             </picture>
           </a>
           <div class="product-card-container">
@@ -341,14 +352,15 @@
             <p class="product-card__description">Кофе без кофеина из Эфиопии
               с натуральным фермерским молоком</p>
             <b class="product-card__price">225₽</b>
+            <button class="button product-card__button" href="#">В корзину</button>
           </div>
-          <a class="button product-card__button" href="#">В корзину</a>
         </article>
         <article class="product-card">
           <a class="product-card__link">
             <picture>
               <source type="image/webp" srcset="img/flat-cream-catalog.webp 1x, img/flat-cream-catalog@2x.webp 2x">
-              <img class="product-card__img" src="img/flat-cream-catalog.png" width="130" height="188" alt="Декаф Флет Уайт" srcset="img/flat-cream-catalog@2x.png">
+              <img class="product-card__img" src="img/flat-cream-catalog.png" width="130" height="188"
+                alt="Декаф Флет Уайт" srcset="img/flat-cream-catalog@2x.png">
             </picture>
           </a>
           <div class="product-card-container">
@@ -358,8 +370,8 @@
             <p class="product-card__description">Кофе без кофеина из Эфиопии
               с натуральным фермерским молоком</p>
             <b class="product-card__price">225₽</b>
+            <button class="button product-card__button" href="#">В корзину</button>
           </div>
-          <a class="button product-card__button" href="#">В корзину</a>
         </article>
       </div>
       <div class="pagination-wrapper">
@@ -396,19 +408,19 @@
         <li class="social__item">
           <a class="social__link" href="#">
             <!-- svg icon -->
-              <span class="visually-hidden">Вконтакте</span>
+            <span class="visually-hidden">Вконтакте</span>
           </a>
         </li>
         <li class="social__item">
           <a class="social__link" href="#">
             <!-- svg icon -->
-              <span class="visually-hidden">Пинтерест</span>
+            <span class="visually-hidden">Пинтерест</span>
           </a>
         </li>
         <li class="social__item">
           <a class="social__link" href="#">
             <!-- svg icon -->
-              <span class="visually-hidden">Одноклассники</span>
+            <span class="visually-hidden">Одноклассники</span>
           </a>
         </li>
       </ul>
