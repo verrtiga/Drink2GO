@@ -1,5 +1,31 @@
 @use "../abstract" as *;
 
+//main-form
+
+.main-form__apply {
+  width: 160px;
+  height: 45px;
+  padding: 10px 15px;
+  font-size: 13px;
+  line-height: 185%;
+  margin-top: 35px;
+  margin-left: 60px;
+}
+
+.main-form__reset {
+  width: 160px;
+  height: 45px;
+  padding: 10px 15px;
+  font-size: 13px;
+  line-height: 185%;
+  background-color: $white;
+  color: $purple;
+  margin-top: 35px;
+  margin-left: 60px;
+}
+
+
+
 // form-price
 
 .form-price__title {
@@ -45,6 +71,7 @@
   border: 2px solid $purple-light;
 }
 
+
 .form-price__range-toggle--max {
   left: 223px;
   top: -10px;
@@ -84,6 +111,7 @@
 }
 
 .form-price__input {
+  appearance: textfield;
   font-family: $montserrat;
   font-style: normal;
   font-weight: 500;
@@ -96,11 +124,17 @@
   height: 19px;
   border: 2px solid $purple-light;
   border-radius: 4px;
+  outline: none;
 
 }
 
-.form-price__input--from {
-  margin-right: 44px;
+.form-price__input:focus {
+  border-color: $purple-dark;
+}
+
+.form-price__input:disabled {
+  border-color: $grey;
+  opacity: 0.3;
 }
 
 // form-stock
@@ -143,7 +177,9 @@
   border: 2px solid $grey;
   appearance: none;
   margin-left: 20px;
+
 }
+
 
 .form-stock__input[type=radio]:checked+.form-stock__mark::before {
   content: "";
@@ -155,6 +191,18 @@
   height: 16px;
   background-color: $purple;
   border-radius: 50%;
+
+}
+.form-stock__mark:hover{
+  border: 2px solid $purple-light;
+}
+
+.form-stock__input[type=radio]:focus + .form-stock__mark {
+  border-color: $purple;
+}
+
+.form-stock__input[type=radio]:checked + .form-stock__mark {
+  border-color: $purple;
 }
 
 
