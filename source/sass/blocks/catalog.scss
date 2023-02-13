@@ -20,3 +20,37 @@ text-align: center;
 margin: 0;
 color: $black;
 }
+
+.catalog__select {
+  display: flex;
+}
+
+.catalog__sorting {
+font-family: $montserrat;
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 150%;
+color: $black;
+margin-left: 20px;
+}
+
+.catalog__menu {
+border: none;
+background-color: transparent;
+font-family: $montserrat;
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 150%;
+text-align: right;
+color: $purple;
+margin-left: 18px;
+outline: none;
+}
+
+// product-cards
+
+.product-card {
+}
+

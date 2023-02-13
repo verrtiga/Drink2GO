@@ -215,7 +215,7 @@
           <ul class="form-country__list">
             <li class="form-country__item">
               <div class class="form-country__container">
-                <input class="form-country__switch visually-hidden" id="switch"type="checkbox">
+                <input class="form-country__switch visually-hidden" id="switch" type="checkbox" checked>
                 <label for="switch" class="form-country__switch-label">Бразилия</label>
               </div>
             </li>
@@ -251,18 +251,19 @@
       </div>
       <div class="catalog__select">
         <label for="select" class="catalog__sorting"> Сортировка </label>
-        <select class="catalog__select" name="sorting" id="select">
+        <select class="catalog__menu" name="sorting" id="select">
           <option class="catalog__select-item">по умолчанию</option>
           <option class="catalog__select-item">сначала дорогие</option>
           <option class="catalog__select-item">сначала дешевые</option>
           <option class="catalog__select-item">высокий рейтинг</option>
         </select>
       </div>
-      <div class="catalog-wrapper">
+      <div class="catalog-wrapper global-container">
         <article class="product-card">
           <a class="product-card__link">
             <picture>
-              <img class="product-card__img" src="#" width="" height="" alt="">
+              <source type="image/webp" srcset="img/flat-white-catalog.webp 1x, img/flat-white-catalog@2x.webp 2x">
+              <img class="product-card__img" src="img/flat-white-catalog.png" width="130" height="188" alt="Декаф Флет Уайт" srcset="img/flat-white-catalog@2x.png">
             </picture>
           </a>
           <div class="product-card-container">
@@ -278,7 +279,25 @@
         <article class="product-card">
           <a class="product-card__link">
             <picture>
-              <img class="product-card__img" src="#" width="" height="" alt="">
+            <source type="image/webp" srcset="img/flat-purple-catalog.webp 1x, img/flat-purple-catalog@2x.webp 2x">
+            <img class="product-card__img" src="img/flat-purple-catalog.png" width="130" height="188" alt="Декаф Флет Уайт" srcset="img/flat-purple-catalog@2x.png">
+          </picture>
+          </a>
+          <div class="product-card-container">
+            <a class="product-card__link" href="#">
+              <h3 class="product-card__title">Декаф Флэт Уайт</h3>
+            </a>
+            <p class="product-card__description">Кофе без кофеина из Эфиопии
+              с натуральным фермерским молоком</p>
+            <b class="product-card__price">225₽</b>
+          </div>
+          <a class="button product-card__button" href="#">В корзину</a>
+        </article>
+        <article class="product-card">
+          <a class="product-card__link">
+            <picture>
+              <source type="image/webp" srcset="img/flat-black-catalog.webp 1x, img/flat-black-catalog@2x.webp 2x">
+              <img class="product-card__img" src="img/flat-black-catalog.png" width="130" height="188" alt="Декаф Флет Уайт" srcset="img/flat-black-catalog@2x.png">
             </picture>
           </a>
           <div class="product-card-container">
@@ -294,7 +313,8 @@
         <article class="product-card">
           <a class="product-card__link">
             <picture>
-              <img class="product-card__img" src="#" width="" height="" alt="">
+              <source type="image/webp" srcset="img/flat-pink-catalog.webp 1x, img/flat-pink-catalog@2x.webp 2x">
+              <img class="product-card__img" src="img/flat-pink-catalog.png" width="130" height="188" alt="Декаф Флет Уайт" srcset="img/flat-pink-catalog@2x.png">
             </picture>
           </a>
           <div class="product-card-container">
@@ -310,7 +330,8 @@
         <article class="product-card">
           <a class="product-card__link">
             <picture>
-              <img class="product-card__img" src="#" width="" height="" alt="">
+              <source type="image/webp" srcset="img/flat-brown-catalog.webp 1x, img/flat-brown-catalog@2x.webp 2x">
+              <img class="product-card__img" src="img/flat-brown-catalog.png" width="130" height="188" alt="Декаф Флет Уайт" srcset="img/flat-brown-catalog@2x.png">
             </picture>
           </a>
           <div class="product-card-container">
@@ -326,23 +347,8 @@
         <article class="product-card">
           <a class="product-card__link">
             <picture>
-              <img class="product-card__img" src="#" width="" height="" alt="">
-            </picture>
-          </a>
-          <div class="product-card-container">
-            <a class="product-card__link" href="#">
-              <h3 class="product-card__title">Декаф Флэт Уайт</h3>
-            </a>
-            <p class="product-card__description">Кофе без кофеина из Эфиопии
-              с натуральным фермерским молоком</p>
-            <b class="product-card__price">225₽</b>
-          </div>
-          <a class="button product-card__button" href="#">В корзину</a>
-        </article>
-        <article class="product-card">
-          <a class="product-card__link">
-            <picture>
-              <img class="product-card__img" src="#" width="" height="" alt="">
+              <source type="image/webp" srcset="img/flat-cream-catalog.webp 1x, img/flat-cream-catalog@2x.webp 2x">
+              <img class="product-card__img" src="img/flat-cream-catalog.png" width="130" height="188" alt="Декаф Флет Уайт" srcset="img/flat-cream-catalog@2x.png">
             </picture>
           </a>
           <div class="product-card-container">
