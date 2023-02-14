@@ -24,23 +24,25 @@
           <img class="header__main-logo" src="img/logo-mobile.svg" width="32" height="36" alt="Логотип компании">
         </picture>
       </a>
-      <button class="header__toggle-login" type="button">
+    </div>
+    <div class="header-menu">
+      <a class="header__toggle-login" type="button">
         <svg width="16" height="16">
           <use href="img/sprite.svg#login-icon"></use>
         </svg>
-      </button>
-      <button class="header__toggle-order" type="button">
+      </a>
+      <a class="header__toggle-order" type="button">
         <svg width="16" height="16">
           <use href="img/sprite.svg#order-button"></use>
         </svg>
-      </button>
+      </a>
       <button class="header__toggle-menu header__toggle-menu--close header__toggle-menu-nojs" type="button"></button>
     </div>
     <nav class="navigation">
       <div class="navigation__container navigation__container--open navigation__container--nojs">
         <ul class="navigation__list">
           <li class="navigation__item">
-            <a class="navigation__link">Главная</a>
+            <a class="navigation__link navigation__link--current">Главная</a>
           </li>
           <li class="navigation__item">
             <a class="navigation__link">Каталог</a>
@@ -394,7 +396,15 @@
       </div>
     </section>
     <article class="map-location">
-      <div id="map" style="min-height: 420px; min-width: 320px;"></div>
+      <div id="map" style="min-height: 420px; min-width: 320px;">
+      <span class="map-location__nojs">
+        <picture>
+          <source meda="(min-width: 1280px)" srcset="img/map-nojs-desktop.png">
+          <source meda="(min-width: 768px)" srcset="img/map-nojs-tablet.png">
+        <img  src="img/map-nojs-mobile.png" width="320" height="420" alt="Санкт-Петербург, набережная реки Карповки, дом 5">
+        </picture>
+      </span>
+      </div>
     </article>
   </main>
 
@@ -422,7 +432,7 @@
             <span class="visually-hidden">Пинтерест</span>
           </a>
         </li>
-        <li class="social__item">
+        <li class="social__item social__item--last">
           <a class="social__link" href="#">
             <svg class="social__ok" width="20" height="20" ">
               <use href=" img/sprite.svg#ok-icon"></use>

@@ -1,9 +1,22 @@
 @use "../abstract" as *;
 
+.navigation {
+
+  @media (min-width: $tablet-width) {
+    grid-area: 1/2;
+  }
+}
+
 .navigation__container {
   min-width: 100%;
   position: absolute;
   min-height: 132px;
+
+  @media (min-width: $tablet-width) {
+    min-height: auto;
+    min-width: auto;
+    padding: 34px 0;
+  }
 
 }
 
@@ -11,12 +24,18 @@
   position: absolute;
   display: none;
   z-index: 2;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    position: unset;
+  }
 }
 
 .navigation__container--close {
   z-index: 10;
   position: absolute;
-  margin-left: -20px;
+  margin-left: -301px;
+  margin-top: 30px;
 }
 
 .navigation__container--nojs {
@@ -36,12 +55,23 @@
   text-align: center;
   background-color: $white;
   z-index: 10;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    background-color: transparent;
+  }
 }
 
 .navigation__item {
   border-top: 1px solid $lavend;
   padding-top: 21px;
   padding-bottom: 21px;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+    padding: 0;
+  }
 
 }
 
