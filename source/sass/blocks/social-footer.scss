@@ -1,0 +1,17 @@
+@use "../sass/abstract" as *;
+
+.social-container {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  border-bottom: 1px solid $base;
+}
+
+.social__list {
+  display: flex;
+  list-style-type: none;
+}
+
+.social__item {
+  margin-right: 40px;
+}

@@ -41,7 +41,7 @@ mainPinMarker.addTo(map);
 
 
 
-// slider-hero
+// slider-swiper
 const swiper = new Swiper('.swiper', {
 
   pagination: {
