@@ -1,0 +1,134 @@
+@use "../sass/abstract" as *;
+
+.catalog {
+  background-color: $back-grey;
+  margin-top: 60px;
+  box-sizing: border-box;
+}
+
+.badge--catalog {
+  padding-top: 50px;
+}
+
+.catalog__title {
+  font-family: $montserrat;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 150%;
+  text-align: center;
+  margin: 0;
+  color: $black;
+}
+
+.catalog__select {
+  display: flex;
+}
+
+.catalog__sorting {
+  font-family: $montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+  color: $black;
+  margin-left: 20px;
+}
+
+.catalog__menu {
+  border: none;
+  background-color: transparent;
+  font-family: $montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: right;
+  color: $purple;
+  margin-left: 18px;
+  outline: none;
+}
+
+.catalog-wrapper {
+  margin-top: 20px;
+  box-sizing: border-box;
+}
+
+// product-cards
+
+.product-card {
+  background-color: $white;
+  border-radius: 4px;
+  margin-top: 20px;
+}
+
+.product-card__link {
+  text-decoration: none;
+}
+
+.product-card__img {
+  margin-left: 75px;
+  margin-top: 40px;
+}
+
+.product-card__title {
+  font-family: $montserrat;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 178%;
+  color: $black;
+  margin: 0;
+  margin-top: 24px;
+}
+
+.product-card__description {
+  font-family: $montserrat;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 143%;
+  color: $black;
+  margin: 0;
+  margin-top: 4px;
+  margin-bottom: 20px;
+  width: 210px;
+}
+
+.product-card__price {
+  font-family: $montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 160%;
+  color: $black;
+  margin-top: 18px;
+}
+
+.product-card__button {
+  font-family: $montserrat;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 143%;
+  color: $white;
+  padding: 6px 20px;
+  margin-left: 46px;
+  position: relative;
+  text-align: right;
+  width: 141px;
+}
+
+.product-card__button::before {
+  content: "";
+  background-image: url("../../img/order-button-catalog.svg");
+  width: 20px;
+  height: 16px;
+  display: block;
+  position: absolute;
+}
+
+.product-card-container {
+  padding: 0 20px;
+  padding-bottom:22px;
+}

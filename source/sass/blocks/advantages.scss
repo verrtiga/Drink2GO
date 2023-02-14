@@ -1,0 +1,89 @@
+@use "../abstract" as *;
+
+.badge--advantages {
+  margin-left:91px;
+}
+
+.advantages__title {
+font-family: $montserrat;
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 150%;
+color: $black;
+text-align: center;
+margin: 0;
+}
+
+.advantages__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.advantages__name {
+font-family: $montserrat;
+font-style: normal;
+font-weight: 700;
+font-size: 18px;
+line-height: 178%;
+text-align: center;
+color: $black;
+margin: 0;
+}
+
+.advantages__description {
+font-family: $montserrat;
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 143%;
+text-align: center;
+margin: 0;
+}
+
+.advantages__item {
+  position: relative;
+  margin-top: 100px;
+}
+
+.advantages__item--speed::before {
+  content: "";
+  position: absolute;
+  background-image: url(../../img/speed.svg);
+  width: 46px;
+  height: 52px;
+  bottom: 91px;
+  left: 121px;
+}
+
+.advantages__item--comfortable::before {
+  content: "";
+  position: absolute;
+  background-image: url(../../img/comfortable.svg);
+  width: 48px;
+  height: 52px;
+  bottom: 91px;
+  left: 121px;
+}
+
+.advantages__item--energy::before {
+  content: "";
+  position: absolute;
+  background-image: url(../../img/energy.svg);
+  width: 38px;
+  height: 52px;
+  bottom: 91px;
+  left: 121px;
+}
+
+.advantages__item--eco::before {
+  content: "";
+  position: absolute;
+  background-image: url(../../img/eco.svg);
+  width: 42px;
+  height: 52px;
+  bottom: 91px;
+  left: 121px;
+
+}

@@ -1,0 +1,82 @@
+@use "../sass/abstract" as *;
+
+.contacs__title {
+  font-family: $montserrat;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 143%;
+  letter-spacing: 0.02em;
+  color: $purple;
+  padding: 0 20px;
+  margin: 0;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.contacs__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  border-bottom: 1px solid $base;
+  padding: 0 20px;
+  margin-bottom: 28px;
+}
+
+.contacs__item {
+  font-family: $montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 133%;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: $black;
+  margin-bottom: 20px;
+}
+
+.contacs__link {
+  text-decoration: none;
+  color: $black;
+}
+
+.contacs__link--location {
+  text-transform: none;
+  font-family: $montserrat;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 143%;
+}
+
+.contacs__item--location {
+  position: relative;
+  margin-left: 19px;
+}
+
+.contacs__item--location::after {
+  content: "";
+  display: block;
+  position: absolute;
+  background-image: url("../../img/location-icon.svg");
+  width: 13px;
+  height: 16px;
+  left: -21px;
+  top: 3px;
+}
+
+.contacs__item--phone {
+  position: relative;
+  margin-left: 19px;
+}
+
+.contacs__item--phone::after {
+  content: "";
+  display: block;
+  position: absolute;
+  background-image: url("../../img/phone-icon.svg");
+  width: 13px;
+  height: 16px;
+  left: -21px;
+  top: 3px;
+}

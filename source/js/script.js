@@ -1,17 +1,61 @@
 
+// leaflet
+
+const map = L.map('map')
+  .setView({
+    lat: 59.968137,
+    lng: 30.316272,
+  }, 18);
+
+L.tileLayer(
+  'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+  {
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+  },
+).addTo(map);
+
+const mainPinIcon = L.icon({
+  iconUrl: '../img/marker.svg',
+  iconSize: [38, 50],
+  iconAnchor: [26, 52],
+});
+
+const mainPinMarker = L.marker(
+  {
+    lat: 59.96831,
+    lng: 30.31748,
+  },
+  {
+    draggable: true,
+    icon: mainPinIcon,
+  },
+);
+
+map.setView({
+  lat: 59.96831,
+  lng: 30.31748,
+}, 18);
+
+mainPinMarker.addTo(map);
+
+
+
+
+// slider-swiper
 const swiper = new Swiper('.swiper', {
-  // If we need pagination
+
   pagination: {
     el: '.swiper-pagination',
   },
 
-  // Navigation arrows
+
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
 });
 
+// mobile-menu
 let nav = document.querySelector('.navigation__container');
 let toggle = document.querySelector('.header__toggle-menu');
 let head = document.querySelector('.header__toggle-menu');

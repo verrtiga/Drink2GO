@@ -1,0 +1,282 @@
+@use "../abstract" as *;
+
+//main-form
+
+.main-form__apply {
+  width: 160px;
+  height: 45px;
+  padding: 10px 15px;
+  font-size: 13px;
+  line-height: 185%;
+  margin-top: 35px;
+  margin-left: 60px;
+}
+
+.main-form__reset {
+  width: 160px;
+  height: 45px;
+  padding: 10px 15px;
+  font-size: 13px;
+  line-height: 185%;
+  background-color: $white;
+  color: $purple;
+  margin-top: 35px;
+  margin-left: 60px;
+}
+
+
+
+// form-price
+
+.form-price__title {
+  font-family: $montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+  color: $black;
+  margin: 0;
+  margin-top: 20px;
+}
+
+// form-price range-bar
+
+.form-price__range {
+  margin-top: 20px;
+}
+
+.form-price__scale {
+  position: relative;
+  height: 2px;
+  background-color: $grey-light;
+  width: 280px;
+}
+
+.form-price__range-bar {
+  position: absolute;
+  height: 5px;
+  opacity: 1;
+  background-color: $purple-light;
+  width: 240px;
+  ;
+}
+
+.form-price__range-toggle {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  background-color: $white;
+  border-radius: 12px;
+  cursor: pointer;
+  border: 2px solid $purple-light;
+}
+
+
+.form-price__range-toggle--max {
+  left: 223px;
+  top: -10px;
+}
+
+.form-price__range-toggle--min {
+  top: -10px;
+}
+
+// form-price value-window
+
+.form-price__value {
+  margin-top: 35px;
+  display: flex;
+  box-sizing: border-box;
+}
+
+.form-price__label {
+  position: relative;
+
+}
+
+.form-price__label--from {
+  margin-right: 44px;
+}
+
+.form-price__label--from::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 8px;
+  height: 2px;
+  left: 136px;
+  top: 19px;
+
+  background-color: $grey;
+}
+
+.form-price__input {
+  appearance: textfield;
+  font-family: $montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  color: $black;
+  padding: 7px 10px;
+  width: 93px;
+  height: 19px;
+  border: 2px solid $purple-light;
+  border-radius: 4px;
+  outline: none;
+
+}
+
+.form-price__input:focus {
+  border-color: $purple-dark;
+}
+
+.form-price__input:disabled {
+  border-color: $grey;
+  opacity: 0.3;
+}
+
+// form-stock
+
+.form-stock__title {
+  font-family: $montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+  margin: 0;
+  margin-top: 23px;
+  color: $black;
+}
+
+.form-stock__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.form-stock__item {
+  font-family: $montserrat;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: $black;
+  margin-top: 22px;
+  margin-left: 44px;
+}
+
+.form-stock__mark {
+  position: absolute;
+  width: 24px;
+  left: 0;
+  height: 24px;
+  border-radius: 50%;
+  background-color: $white;
+  border: 2px solid $grey;
+  appearance: none;
+  margin-left: 20px;
+
+}
+
+
+.form-stock__input[type=radio]:checked+.form-stock__mark::before {
+  content: "";
+  position: absolute;
+  left: 4px;
+  top: 4px;
+  margin: auto;
+  width: 16px;
+  height: 16px;
+  background-color: $purple;
+  border-radius: 50%;
+
+}
+.form-stock__mark:hover{
+  border: 2px solid $purple-light;
+}
+
+.form-stock__input[type=radio]:focus + .form-stock__mark {
+  border-color: $purple;
+}
+
+.form-stock__input[type=radio]:checked + .form-stock__mark {
+  border-color: $purple;
+}
+
+
+//form-country
+
+.form-country__title {
+  font-family: $montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+  color: $black;
+  margin: 0;
+  margin-top: 22px;
+}
+
+.form-country__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.form-country__item {
+  font-family: $montserrat;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color:$black;
+  margin-top: 21px;
+}
+
+.form-country__switch {
+  position: relative;
+  display: inline-block;
+  width: 42px;
+  height: 24px;
+  margin: 0;
+  vertical-align: top;
+  background: $grey;
+  border-radius: 30px;
+  outline: none;
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  transition: all 0.3s cubic-bezier(0.2, 0.85, 0.32, 1.2);
+ }
+
+ .form-country__switch::after{
+  content: "";
+  display: inline-block;
+  position: absolute;
+  left: 3px;
+  top: 2px;
+  width: 20px;
+  height: 20px;
+  background-color: $white;
+  border-radius: 50%;
+  transform: translateX(0);
+  transition: all 0.3s cubic-bezier(0.2, 0.85, 0.32, 1.2);
+ }
+
+ .form-country__switch:checked::after {
+  transform: translateX(calc(100% + -4px));
+  background-color: $white;
+}
+.form-country__switch:checked {
+  background-color: $purple;
+}
+
+.form-country__switch-label {
+  margin-left: 12px;
+}
+
+
+

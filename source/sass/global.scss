@@ -28,10 +28,52 @@ body {
 
 
   @media (min-width: $tablet-width) {
-    padding: 0 30px;
+    padding: 0 20px;
   }
 
   @media (min-width: $desktop-width) {
     width: 1280px;
   }
+}
+
+.badge {
+  font-family: $montserrat;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 133%;
+  text-transform: uppercase;
+  color: $purple;
+  letter-spacing: 0.04em;
+  text-align: center;
+  margin-left: 113px;
+}
+
+.form-container {
+  padding: 50px 20px;
+}
+
+.html-academy {
+  font-family: $montserrat;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 133%;
+  color: $grey;
+  position: relative;
+  margin: 0;
+  margin-left: 73px;
+  margin-bottom: 30px;
+
+}
+
+.html-academy::after {
+  content: "";
+  display: block;
+  position: absolute;
+  background-image: url("../../img/htmlacademy-logo.svg");
+  width: 12px;
+  height: 16px;
+  top: 0px;
+  left: 175px;
 }
