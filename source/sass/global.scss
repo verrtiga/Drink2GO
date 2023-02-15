@@ -47,6 +47,11 @@ body {
   letter-spacing: 0.04em;
   text-align: center;
   margin-left: 113px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 263px;
+    margin-top: 60px;
+  }
 }
 
 .form-container {
