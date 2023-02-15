@@ -72,6 +72,14 @@ body {
 
 }
 
+.advantages-container {
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    padding: 20px 49px;
+  }
+}
+
 .html-academy::after {
   content: "";
   display: block;
