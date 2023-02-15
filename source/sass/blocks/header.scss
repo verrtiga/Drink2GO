@@ -25,7 +25,29 @@
     width: 82px;
     height: 36px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 170px;
+    height: 36px;
+  }
 }
+
+.header-logo__description {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 133%;
+    color: $black;
+    width: 126px;
+    margin-left: 20px;
+  }
+}
+
 
 .header__toggle-menu {
   position: absolute;
@@ -96,6 +118,44 @@
   padding: 0;
   text-decoration: none;
   margin-right: 44px;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+  }
+}
+
+.header__login-desktop {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    font-family: $montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 133%;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: $black;
+    margin-left: 8px;
+  }
+}
+
+.header__order-desktop {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    font-family: $montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 133%;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: $black;
+    margin-left: 8px;
+  }
 }
 
 
@@ -106,6 +166,10 @@
   padding: 0;
   text-decoration: none;
   margin-right: 50px;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+  }
 }
 
 .header-menu {
@@ -121,5 +185,9 @@
 .header-logo {
   @media (min-width: $tablet-width) {
     grid-area: 1;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
   }
 }
