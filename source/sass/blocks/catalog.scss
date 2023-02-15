@@ -8,6 +8,10 @@
 
 .badge--catalog {
   padding-top: 50px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 333px;
+  }
 }
 
 .catalog__title {
@@ -19,6 +23,11 @@
   text-align: center;
   margin: 0;
   color: $black;
+
+  @media (min-width: $tablet-width) {
+    font-size: 42px;
+    line-height: 152%;
+  }
 }
 
 .catalog__select {
