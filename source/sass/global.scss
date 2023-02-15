@@ -70,6 +70,11 @@ body {
   margin-left: 73px;
   margin-bottom: 30px;
 
+  @media (min-width: $tablet-width) {
+    grid-column: 2/3;
+    margin-left: 24px;
+  }
+
 }
 
 .advantages-container {
