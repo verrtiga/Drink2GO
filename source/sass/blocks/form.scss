@@ -8,6 +8,10 @@
     grid-template-columns: auto auto auto ;
     grid-template-rows: auto;
   }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
 }
 
 .main-form__apply {
@@ -33,6 +37,11 @@
   background-color: $white;
   color: $purple;
   margin-top: 35px;
+  margin-left: 60px;
+
+  @media (min-width:$tablet-width) {
+    margin: 0;
+  }
 
 }
 

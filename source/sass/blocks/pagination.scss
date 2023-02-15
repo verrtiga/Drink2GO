@@ -1,5 +1,10 @@
 @use "../sass/abstract" as *;
 
+.pagination-wrapper {
+  @media (min-width: $desktop-width) {
+    grid-area: 3/2;
+  }
+}
 
 .pagination {
   display: flex;

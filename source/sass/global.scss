@@ -30,10 +30,6 @@ body {
   @media (min-width: $tablet-width) {
     padding: 0 20px;
   }
-
-  @media (min-width: $desktop-width) {
-    width: 1280px;
-  }
 }
 
 .badge {
@@ -60,6 +56,12 @@ body {
 
 .form-container {
   padding: 50px 20px;
+
+  @media (min-width: $desktop-width) {
+    grid-area: 2/1;
+    width: 275px;
+    padding: 0px 20px;
+  }
 }
 
 .html-academy {
