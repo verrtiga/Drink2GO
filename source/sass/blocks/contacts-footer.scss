@@ -1,5 +1,13 @@
 @use "../sass/abstract" as *;
 
+.contacs-container {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+  }
+}
+
 .contacs__title {
   font-family: $montserrat;
   font-style: normal;
@@ -21,6 +29,10 @@
   border-bottom: 1px solid $base;
   padding: 0 20px;
   margin-bottom: 28px;
+
+  @media (min-width: $tablet-width) {
+    border-bottom: none;
+  }
 }
 
 .contacs__item {

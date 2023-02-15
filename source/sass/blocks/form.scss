@@ -2,6 +2,14 @@
 
 //main-form
 
+.main-form {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: auto auto auto ;
+    grid-template-rows: auto;
+  }
+}
+
 .main-form__apply {
   width: 160px;
   height: 45px;
@@ -10,6 +18,10 @@
   line-height: 185%;
   margin-top: 35px;
   margin-left: 60px;
+
+  @media (min-width: $tablet-width) {
+
+  }
 }
 
 .main-form__reset {
@@ -21,7 +33,7 @@
   background-color: $white;
   color: $purple;
   margin-top: 35px;
-  margin-left: 60px;
+
 }
 
 
@@ -176,8 +188,13 @@
   background-color: $white;
   border: 2px solid $grey;
   appearance: none;
-  margin-left: 20px;
+  margin-left: -42px;
 
+
+}
+
+.form-stock__label {
+  position: relative;
 }
 
 

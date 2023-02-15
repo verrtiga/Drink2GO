@@ -12,13 +12,23 @@
   color: $purple;
   width: 11px;
   margin-top:0;
-  font-size: 25px !important;
+  font-size: 25px !important; // Чтобы Изменить размер кнопки в swiper
+
+  @media (min-width: $tablet-width) {
+    top: 400px !important;
+  }
+
 }
 
 .swiper-button-prev::after {
   color: $purple;
   margin-top:0;
-  font-size: 25px !important;
+  font-size: 25px !important; // Чтобы Изменить размер кнопки в swiper
+
+  @media (min-width: $tablet-width) {
+    top: 400px !important;
+  }
+
 }
 
 .swiper-button-next {
@@ -30,3 +40,18 @@
   margin: 0 auto;
 }
 
+.swiper {
+  width: 320px;
+  @media (min-width: $tablet-width) {
+   grid-area: 2/2;
+   position: unset !important;
+   width: 768px;
+
+  }
+}
+
+.swiper-slide__img {
+  @media (min-width: $tablet-width) {
+    margin-left: 120px;
+  }
+}

@@ -1,50 +1,91 @@
 @use "../abstract" as *;
 
 .badge--advantages {
-  margin-left:91px;
+  margin-left: 91px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 304px;
+  }
 }
 
 .advantages__title {
-font-family: $montserrat;
-font-style: normal;
-font-weight: 700;
-font-size: 24px;
-line-height: 150%;
-color: $black;
-text-align: center;
-margin: 0;
+  font-family: $montserrat;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 150%;
+  color: $black;
+  text-align: center;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 42px;
+    line-height: 152%;
+  }
+
 }
+
 
 .advantages__list {
   list-style-type: none;
   margin: 0;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    display: grid;
+    margin-top: 60px;
+    margin-left: 51px;
+
+  }
 }
 
 .advantages__name {
-font-family: $montserrat;
-font-style: normal;
-font-weight: 700;
-font-size: 18px;
-line-height: 178%;
-text-align: center;
-color: $black;
-margin: 0;
+  font-family: $montserrat;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 178%;
+  text-align: center;
+  color: $black;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 24px;
+    line-height: 150%;
+    text-align: left;
+    margin-bottom: 10px;
+  }
 }
 
 .advantages__description {
-font-family: $montserrat;
-font-style: normal;
-font-weight: 400;
-font-size: 14px;
-line-height: 143%;
-text-align: center;
-margin: 0;
+  font-family: $montserrat;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 143%;
+  text-align: center;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 150%;
+    text-align: left;
+  }
 }
 
 .advantages__item {
-  position: relative;
   margin-top: 100px;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
+}
+
+.advantages__item--speed {
+  position: relative;
 }
 
 .advantages__item--speed::before {
@@ -55,6 +96,11 @@ margin: 0;
   height: 52px;
   bottom: 91px;
   left: 121px;
+
+  @media (min-width: $tablet-width) {
+    left: -23px;
+    bottom: 66px;
+  }
 }
 
 .advantages__item--comfortable::before {
@@ -65,6 +111,11 @@ margin: 0;
   height: 52px;
   bottom: 91px;
   left: 121px;
+
+  @media (min-width: $tablet-width) {
+    left: -23px;
+    bottom: 62px;
+  }
 }
 
 .advantages__item--energy::before {
@@ -75,6 +126,11 @@ margin: 0;
   height: 52px;
   bottom: 91px;
   left: 121px;
+
+  @media (min-width:$tablet-width) {
+    bottom: 91px;
+    left: -23px;
+  }
 }
 
 .advantages__item--eco::before {
@@ -85,5 +141,10 @@ margin: 0;
   height: 52px;
   bottom: 91px;
   left: 121px;
+
+  @media (min-width: $tablet-width) {
+    bottom: 91px;
+    left: -23px;
+  }
 
 }

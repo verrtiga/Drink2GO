@@ -5,6 +5,11 @@
   align-items: center;
   margin-top: 20px;
   border-bottom: 1px solid $base;
+
+  @media (min-width: $tablet-width) {
+    justify-content: space-between;
+    border: none;
+  }
 }
 
 .social__list {
@@ -18,4 +23,11 @@
 
 .social__item--last {
   margin: 0;
+}
+
+.social__logo {
+  @media (min-width: $tablet-width) {
+    width: 170px;
+    height: 36px;
+  }
 }

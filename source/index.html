@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
     integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="" />
-  <link rel="preload" href="fonts/montserratregular.woff2" as="font">
+  <link rel="preload" href="fonts/Montserrat-Regular.woff2" as="font">
   <link rel="preload" href="fonts/montserratbold.woff2" as="font">
   <link rel="preload" href="fonts/montserratsemibold.woff2" as="font">
 </head>
@@ -109,17 +109,19 @@
           <div class="swiper-pagination swiper-pagination--disabled"></div>
           <div class="swiper-button-prev"></div>
           <div class="swiper-button-next"></div>
+        </div>
+        <div class="hero-section-container">
           <b class="badge badge--hero">Новинка!</b>
           <h1 class="hero-section__title">Декаф Флэт Уайт</h1>
           <p class="hero-section__description">Свежесваренный кофе без кофеина из Эфиопии с натуральным фермерским
             молоком
             — то, что нужно для расслабления после тяжёлого рабочего дня</p>
-        </div>
-        <div class="hero-section__price-block">
-          <b class="hero-section__sale">295₽</b>
-          <b class="hero-section__price">225₽</b>
-          <button class="button hero-section__button">Заказать</button>
-        </div>
+            <div class="hero-section__price-block">
+              <b class="hero-section__sale">295₽</b>
+              <b class="hero-section__price">225₽</b>
+              <button class="button hero-section__button">Заказать</button>
+            </div>
+          </div>
       </section>
     </div>
     <section class="advantages global-container">
@@ -296,7 +298,7 @@
             <a class="product-card__link" href="#">
               <h3 class="product-card__title">Декаф Флэт Уайт</h3>
             </a>
-            <p class="product-card__description">Кофе без кофеина из Эфиопии
+            <p class="product-card__description">Кофе без кофеина из Эфиопии<br>
               с натуральным фермерским молоком</p>
             <b class="product-card__price">225₽</b>
             <button class="button product-card__button" href="#">В корзину</button>
@@ -379,6 +381,7 @@
         <ul class="pagination">
           <li class="pagination__item">
             <a class="pagination__link pagination__link--arrow-left" href="#"></a>
+            <a class="pagination__tablet pagination__tablet--hidden" href="#">Назад</a>
           </li>
           <li class="pagination__item">
             <a class="pagination__link" href="#">1</a>
@@ -391,6 +394,7 @@
           </li>
           <li class="pagination__item pagination__item--last">
             <a class="pagination__link pagination__link--arrow-right" href="#"></a>
+            <a class="pagination__tablet pagination__tablet--hidden" href="#">Вперёд</a>
           </li>
         </ul>
       </div>
