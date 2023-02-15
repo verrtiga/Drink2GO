@@ -81,4 +81,25 @@
   font-family: $montserrat;
   font-size: 12px;
   line-height: 133%;
+  letter-spacing: 0.02em;
+
+}
+
+.navigation__link--current {
+ color: $purple;
+ position: relative;
+}
+
+.navigation__link--current::after {
+
+  @media (min-width: $tablet-width) {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 103px;
+  height: 2px;
+  background-color: $purple;
+  top:49px;
+  right: -25px;
+  }
 }
