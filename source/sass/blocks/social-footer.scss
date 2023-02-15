@@ -10,11 +10,25 @@
     justify-content: space-between;
     border: none;
   }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: unset;
+    margin-left: 20px;
+    margin-top: 35px;
+  }
 }
 
 .social__list {
   display: flex;
   list-style-type: none;
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    padding: 0;
+    margin-top: 60px;
+  }
 }
 
 .social__item {
@@ -29,5 +43,21 @@
   @media (min-width: $tablet-width) {
     width: 170px;
     height: 36px;
+  }
+}
+
+.social__logo-description {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    font-family: $montserrat;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 143%;
+    color: $black;
+    min-width: 318px;
+    margin-top: 10px;
   }
 }

@@ -81,6 +81,10 @@ body {
     margin-left: 24px;
   }
 
+  @media (min-width: $desktop-width) {
+    margin-left: -66px;
+  }
+
 }
 
 .advantages-container {
