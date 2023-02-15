@@ -11,41 +11,61 @@
 .swiper-button-next::after {
   color: $purple;
   width: 11px;
-  margin-top:0;
+  margin-top: 0;
   font-size: 25px !important; // Чтобы Изменить размер кнопки в swiper
 
   @media (min-width: $tablet-width) {
-    top: 400px !important;
+    top: 400px !important; // Аналогично, обращаюсь к important чтобы изменить параметр swiper
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 369px !important; // Аналогично, обращаюсь к important чтобы изменить параметр swiper
   }
 
 }
 
 .swiper-button-prev::after {
   color: $purple;
-  margin-top:0;
+  margin-top: 0;
   font-size: 25px !important; // Чтобы Изменить размер кнопки в swiper
+}
 
+.swiper-button-prev {
   @media (min-width: $tablet-width) {
-    top: 400px !important;
+    top: 400px !important; // Аналогично, обращаюсь к important чтобы изменить параметр swiper
   }
 
+  @media (min-width: $desktop-width) {
+    top: 369px !important; // Аналогично, обращаюсь к important чтобы изменить параметр swiper
+  }
 }
 
 .swiper-button-next {
-  margin:0;
+  @media (min-width: $tablet-width) {
+    top: 400px !important; // Аналогично, обращаюсь к important чтобы изменить параметр swiper
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 369px !important; // Аналогично, обращаюсь к important чтобы изменить параметр swiper
+  }
 }
 
- .swiper-wrapper {
+.swiper-button-next {
+  margin: 0;
+}
+
+.swiper-wrapper {
   padding: 0 20px;
   margin: 0 auto;
 }
 
 .swiper {
   width: 320px;
+
   @media (min-width: $tablet-width) {
-   grid-area: 2/2;
-   position: unset !important;
-   width: 768px;
+    grid-area: 2/2;
+    position: unset !important;
+    width: 768px;
 
   }
 }
@@ -54,4 +74,17 @@
   @media (min-width: $tablet-width) {
     margin-left: 120px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 53px;
+    margin-bottom: 84px;
+  }
+
 }
+//  .pagination-bullets {
+//   @media (min-width: $desktop-width) {
+//   width: 62px !important;
+//   height: 4px !important;
+//   background-color: $purple !important;
+//   }
+// }
