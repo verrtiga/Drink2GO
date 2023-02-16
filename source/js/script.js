@@ -70,7 +70,7 @@ let toggle = document.querySelector('.header__toggle-menu');
 let head = document.querySelector('.header__toggle-menu');
 
 nav.classList.remove('navigation__container--nojs');
-head.classList.remove('header--nojs');
+head.classList.remove('header__toggle-menu-nojs');
 
 toggle.addEventListener('click', function () {
   if (nav.classList.contains('navigation__container--close')) {
