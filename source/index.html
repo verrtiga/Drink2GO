@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
-    integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="" />
+    integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="">
   <link rel="preload" href="fonts/Montserrat-Regular.woff2" as="font" crossorigin="">
   <link rel="preload" href="fonts/Montserrat-Bold.woff2" as="font" crossorigin="">
   <link rel="preload" href="fonts/Montserrat-SemiBold.woff2" as="font" crossorigin="">
@@ -31,16 +31,16 @@
       <a class="header__toggle-login" href="#">
         <svg width="16" height="16">
           <use href="img/sprite.svg#login-icon"></use>
-          <span class="header__login-desktop">Войти</span>
-          <span class="visually-hidden">Войти в меню.</span>
         </svg>
+        <span class="header__login-desktop">Войти</span>
+        <span class="visually-hidden">Войти в меню.</span>
       </a>
       <a class="header__toggle-order" href="#">
         <svg width="16" height="16">
           <use href="img/sprite.svg#order-button"></use>
-          <span class="header__order-desktop">Корзина</span>
-          <span class="visually-hidden">Войти в корзину.</span>
         </svg>
+        <span class="header__order-desktop">Корзина</span>
+        <span class="visually-hidden">Войти в корзину.</span>
       </a>
       <button class="header__toggle-menu header__toggle-menu--close header__toggle-menu-nojs" type="button">
         <span class="visually-hidden">Открыть меню.</span>
@@ -172,7 +172,7 @@
       <div class="form-container">
         <b class="badge badge--catalog">Каталог</b>
         <h2 class="catalog__title">Каталог кофейных напитков</h2>
-        <form class="main-form" action="https://echo.htmlacademy.ru/courses" method="get">
+        <form class="main-form" action="https://echo.htmlacademy.ru/courses" name="Order-filter" method="get">
           <div class="form-price">
             <h3 class="form-price__title">Цена</h3>
             <div class="form-price__range">
@@ -202,29 +202,29 @@
             <ul class="form-stock__list">
               <li class="form-stock__item">
                 <label class="form-stock__label"> Неважно
-                  <input class="form-stock__input visually-hidden" type="radio" value="No matter" name="In stock"
-                    id="Nomatter" checked>
+                  <input class="form-stock__input visually-hidden" type="radio" value="No matter" name="Order-filter" "
+                    id=" Nomatter" checked>
                   <span class="form-stock__mark"></span>
                 </label>
               </li>
               <li class="form-stock__item">
                 <label class="form-stock__label"> Только животное
-                  <input class="form-stock__input visually-hidden" type="radio" value="Animal" name="In stock"
-                    id="Animal">
+                  <input class="form-stock__input visually-hidden" type="radio" value="Animal" name="Order-filter" "
+                    id=" Animal">
                   <span class="form-stock__mark"></span>
                 </label>
               </li>
               <li class="form-stock__item">
                 <label class="form-stock__label"> Только растительное
-                  <input class="form-stock__input visually-hidden" type="radio" value="Nature" name="In stock"
-                    id="Nature">
+                  <input class="form-stock__input visually-hidden" type="radio" value="Nature" name="Order-filter" "
+                    id=" Nature">
                   <span class="form-stock__mark"></span>
                 </label>
               </li>
               <li class="form-stock__item">
                 <label class="form-stock__label"> Без молока
-                  <input class="form-stock__input visually-hidden" type="radio" value="No milk" name="In stock"
-                    id="Nomilk">
+                  <input class="form-stock__input visually-hidden" type="radio" value="No milk" name="Order-filter" "
+                    id=" Nomilk" disabled>
                   <span class="form-stock__mark"></span>
                 </label>
               </li>
@@ -235,31 +235,36 @@
             <ul class="form-country__list">
               <li class="form-country__item">
                 <div class="form-country__container">
-                  <input class="form-country__switch visually-hidden" id="Brasilia" type="checkbox" checked>
+                  <input class="form-country__switch visually-hidden" id="Brasilia" type="checkbox" name="Order-filter"
+                    value="Brasilia" checked>
                   <label for="Brasilia" class="form-country__switch-label">Бразилия</label>
                 </div>
               </li>
               <li class="form-country__item">
                 <div class="form-country__container">
-                  <input class="form-country__switch visually-hidden" id="Ethiopia" type="checkbox">
+                  <input class="form-country__switch visually-hidden" id="Ethiopia" type="checkbox" name="Order-filter"
+                    value="Ethiopia">
                   <label for="Ethiopia" class="form-country__switch-label">Эфиопия</label>
                 </div>
               </li>
               <li class="form-country__item">
                 <div class="form-country__container">
-                  <input class="form-country__switch visually-hidden" id="Columbia" type="checkbox">
+                  <input class="form-country__switch visually-hidden" id="Columbia" type="checkbox" name="Order-filter"
+                    value="Columbia">
                   <label for="Columbia" class="form-country__switch-label">Колумбия</label>
                 </div>
               </li>
               <li class="form-country__item">
                 <div class="form-country__container">
-                  <input class="form-country__switch visually-hidden" id="Costa-Rica" type="checkbox">
+                  <input class="form-country__switch visually-hidden" id="Costa-Rica" type="checkbox"
+                    name="Order-filter" value="Costa-Rica">
                   <label for="Costa-Rica" class="form-country__switch-label">Коста-Рика</label>
                 </div>
               </li>
               <li class="form-country__item">
                 <div class="form-country__container">
-                  <input class="form-country__switch visually-hidden" id="Peru" type="checkbox">
+                  <input class="form-country__switch visually-hidden" id="Peru" type="checkbox" name="Order-filter"
+                    value="Peru">
                   <label for="Peru" class="form-country__switch-label">Перу</label>
                 </div>
               </li>
