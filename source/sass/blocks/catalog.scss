@@ -4,6 +4,14 @@
   background-color: $back-grey;
   margin-top: 60px;
   box-sizing: border-box;
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto;
+    padding-top: 267px;
+    position: relative;
+  }
 }
 
 .badge--catalog {
@@ -11,6 +19,12 @@
 
   @media (min-width: $tablet-width) {
     margin-left: 333px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 666px;
+    position: absolute;
+    top: 15px;
   }
 }
 
@@ -28,6 +42,12 @@
     font-size: 42px;
     line-height: 152%;
   }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 154px;
+    left: 424px;
+  }
 }
 
 .catalog__select {
@@ -36,6 +56,10 @@
   @media (min-width: $tablet-width) {
     justify-content: flex-end;
     margin-right: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-area: 1/2;
   }
 }
 
@@ -71,6 +95,12 @@
     display: grid;
     column-gap: 30px;
     grid-template-columns: 1fr 1fr;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-area: 2/2;
+    display: flex;
+    flex-wrap: wrap;
   }
 }
 
@@ -108,7 +138,6 @@
   @media (min-width: $tablet-width) {
     font-size: 24px;
     line-height: 150%;
-
   }
 }
 

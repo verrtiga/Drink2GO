@@ -8,10 +8,10 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
-    integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="" />
-  <link rel="preload" href="fonts/Montserrat-Regular.woff2" as="font">
-  <link rel="preload" href="fonts/montserratbold.woff2" as="font">
-  <link rel="preload" href="fonts/montserratsemibold.woff2" as="font">
+    integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="">
+  <link rel="preload" href="fonts/Montserrat-Regular.woff2" as="font" crossorigin="">
+  <link rel="preload" href="fonts/Montserrat-Bold.woff2" as="font" crossorigin="">
+  <link rel="preload" href="fonts/Montserrat-SemiBold.woff2" as="font" crossorigin="">
 </head>
 
 <body class="page__body">
@@ -24,19 +24,27 @@
           <img class="header__main-logo" src="img/logo-mobile.svg" width="32" height="36" alt="Логотип компании">
         </picture>
       </a>
+      <span class="header-logo__description">Интернет-магазин
+        кофейных напитков</span>
     </div>
     <div class="header-menu">
-      <a class="header__toggle-login" type="button">
+      <a class="header__toggle-login" href="#">
         <svg width="16" height="16">
           <use href="img/sprite.svg#login-icon"></use>
         </svg>
+        <span class="header__login-desktop">Войти</span>
+        <span class="visually-hidden">Войти в меню.</span>
       </a>
-      <a class="header__toggle-order" type="button">
+      <a class="header__toggle-order" href="#">
         <svg width="16" height="16">
           <use href="img/sprite.svg#order-button"></use>
         </svg>
+        <span class="header__order-desktop">Корзина</span>
+        <span class="visually-hidden">Войти в корзину.</span>
       </a>
-      <button class="header__toggle-menu header__toggle-menu--close header__toggle-menu-nojs" type="button"></button>
+      <button class="header__toggle-menu header__toggle-menu--close header__toggle-menu-nojs" type="button">
+        <span class="visually-hidden">Открыть меню.</span>
+      </button>
     </div>
     <nav class="navigation">
       <div class="navigation__container navigation__container--open navigation__container--nojs">
@@ -107,8 +115,12 @@
             </div>
           </div>
           <div class="swiper-pagination swiper-pagination--disabled"></div>
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev">
+            <span class="visually-hidden">Предыдущий слайд.</span>
+          </div>
+          <div class="swiper-button-next">
+            <span class="visually-hidden">Следующий слайд.</span>
+          </div>
         </div>
         <div class="hero-section-container">
           <b class="badge badge--hero">Новинка!</b>
@@ -116,12 +128,12 @@
           <p class="hero-section__description">Свежесваренный кофе без кофеина из Эфиопии с натуральным фермерским
             молоком
             — то, что нужно для расслабления после тяжёлого рабочего дня</p>
-            <div class="hero-section__price-block">
-              <b class="hero-section__sale">295₽</b>
-              <b class="hero-section__price">225₽</b>
-              <button class="button hero-section__button">Заказать</button>
-            </div>
+          <div class="hero-section__price-block">
+            <b class="hero-section__sale">295₽</b>
+            <b class="hero-section__price">225₽</b>
+            <button class="button hero-section__button">Заказать</button>
           </div>
+        </div>
       </section>
     </div>
     <section class="advantages global-container">
@@ -160,7 +172,7 @@
       <div class="form-container">
         <b class="badge badge--catalog">Каталог</b>
         <h2 class="catalog__title">Каталог кофейных напитков</h2>
-        <form class="main-form" action="https://echo.htmlacademy.ru/courses" method="get">
+        <form class="main-form" action="https://echo.htmlacademy.ru/courses" name="Order-filter" method="get">
           <div class="form-price">
             <h3 class="form-price__title">Цена</h3>
             <div class="form-price__range">
@@ -190,29 +202,29 @@
             <ul class="form-stock__list">
               <li class="form-stock__item">
                 <label class="form-stock__label"> Неважно
-                  <input class="form-stock__input visually-hidden" type="radio" value="No matter" name="In stock"
+                  <input class="form-stock__input visually-hidden" type="radio" value="No matter" name="Order-filter"
                     id="Nomatter" checked>
                   <span class="form-stock__mark"></span>
                 </label>
               </li>
               <li class="form-stock__item">
                 <label class="form-stock__label"> Только животное
-                  <input class="form-stock__input visually-hidden" type="radio" value="Animal" name="In stock"
+                  <input class="form-stock__input visually-hidden" type="radio" value="Animal" name="Order-filter"
                     id="Animal">
                   <span class="form-stock__mark"></span>
                 </label>
               </li>
               <li class="form-stock__item">
                 <label class="form-stock__label"> Только растительное
-                  <input class="form-stock__input visually-hidden" type="radio" value="Nature" name="In stock"
+                  <input class="form-stock__input visually-hidden" type="radio" value="Nature" name="Order-filter"
                     id="Nature">
                   <span class="form-stock__mark"></span>
                 </label>
               </li>
               <li class="form-stock__item">
                 <label class="form-stock__label"> Без молока
-                  <input class="form-stock__input visually-hidden" type="radio" value="No milk" name="In stock"
-                    id="Nomilk">
+                  <input class="form-stock__input visually-hidden" type="radio" value="No milk" name="Order-filter"
+                    id="Nomilk" disabled>
                   <span class="form-stock__mark"></span>
                 </label>
               </li>
@@ -222,33 +234,38 @@
             <h3 class="form-country__title">Страна произрастания</h3>
             <ul class="form-country__list">
               <li class="form-country__item">
-                <div class class="form-country__container">
-                  <input class="form-country__switch visually-hidden" id="switch" type="checkbox" checked>
-                  <label for="switch" class="form-country__switch-label">Бразилия</label>
+                <div class="form-country__container">
+                  <input class="form-country__switch visually-hidden" id="Brasilia" type="checkbox" name="Order-filter"
+                    value="Brasilia" checked>
+                  <label for="Brasilia" class="form-country__switch-label">Бразилия</label>
                 </div>
               </li>
               <li class="form-country__item">
-                <div class class="form-country__container">
-                  <input class="form-country__switch visually-hidden" id="switch" type="checkbox">
-                  <label for="switch" class="form-country__switch-label">Эфиопия</label>
+                <div class="form-country__container">
+                  <input class="form-country__switch visually-hidden" id="Ethiopia" type="checkbox" name="Order-filter"
+                    value="Ethiopia">
+                  <label for="Ethiopia" class="form-country__switch-label">Эфиопия</label>
                 </div>
               </li>
               <li class="form-country__item">
-                <div class class="form-country__container">
-                  <input class="form-country__switch visually-hidden" id="switch" type="checkbox">
-                  <label for="switch" class="form-country__switch-label">Колумбия</label>
+                <div class="form-country__container">
+                  <input class="form-country__switch visually-hidden" id="Columbia" type="checkbox" name="Order-filter"
+                    value="Columbia">
+                  <label for="Columbia" class="form-country__switch-label">Колумбия</label>
                 </div>
               </li>
               <li class="form-country__item">
-                <div class class="form-country__container">
-                  <input class="form-country__switch visually-hidden" id="switch" type="checkbox">
-                  <label for="switch" class="form-country__switch-label">Коста-Рика</label>
+                <div class="form-country__container">
+                  <input class="form-country__switch visually-hidden" id="Costa-Rica" type="checkbox"
+                    name="Order-filter" value="Costa-Rica">
+                  <label for="Costa-Rica" class="form-country__switch-label">Коста-Рика</label>
                 </div>
               </li>
               <li class="form-country__item">
-                <div class class="form-country__container">
-                  <input class="form-country__switch visually-hidden" id="switch" type="checkbox">
-                  <label for="switch" class="form-country__switch-label">Перу</label>
+                <div class="form-country__container">
+                  <input class="form-country__switch visually-hidden" id="Peru" type="checkbox" name="Order-filter"
+                    value="Peru">
+                  <label for="Peru" class="form-country__switch-label">Перу</label>
                 </div>
               </li>
             </ul>
@@ -258,7 +275,7 @@
         </form>
       </div>
       <div class="catalog__select">
-        <label for="select" class="catalog__sorting"> Сортировка </label>
+        <label for="select" class="catalog__sorting"> Сортировка: </label>
         <select class="catalog__menu" name="sorting" id="select">
           <option class="catalog__select-item">по умолчанию</option>
           <option class="catalog__select-item">сначала дорогие</option>
@@ -282,7 +299,7 @@
             <p class="product-card__description">Кофе без кофеина из Эфиопии
               с натуральным фермерским молоком</p>
             <b class="product-card__price">225₽</b>
-            <button class="button product-card__button" href="#">В корзину</button>
+            <button class="button product-card__button" type="button">В корзину</button>
           </div>
 
         </article>
@@ -301,7 +318,7 @@
             <p class="product-card__description">Кофе без кофеина из Эфиопии<br>
               с натуральным фермерским молоком</p>
             <b class="product-card__price">225₽</b>
-            <button class="button product-card__button" href="#">В корзину</button>
+            <button class="button product-card__button" type="button">В корзину</button>
           </div>
         </article>
         <article class="product-card">
@@ -319,7 +336,7 @@
             <p class="product-card__description">Кофе без кофеина из Эфиопии
               с натуральным фермерским молоком</p>
             <b class="product-card__price">225₽</b>
-            <button class="button product-card__button" href="#">В корзину</button>
+            <button class="button product-card__button" type="button">В корзину</button>
           </div>
         </article>
         <article class="product-card">
@@ -337,7 +354,7 @@
             <p class="product-card__description">Кофе без кофеина из Эфиопии
               с натуральным фермерским молоком</p>
             <b class="product-card__price">225₽</b>
-            <button class="button product-card__button" href="#">В корзину</button>
+            <button class="button product-card__button" type="button">В корзину</button>
           </div>
         </article>
         <article class="product-card">
@@ -355,7 +372,7 @@
             <p class="product-card__description">Кофе без кофеина из Эфиопии
               с натуральным фермерским молоком</p>
             <b class="product-card__price">225₽</b>
-            <button class="button product-card__button" href="#">В корзину</button>
+            <button class="button product-card__button" type="button">В корзину</button>
           </div>
         </article>
         <article class="product-card">
@@ -373,7 +390,7 @@
             <p class="product-card__description">Кофе без кофеина из Эфиопии
               с натуральным фермерским молоком</p>
             <b class="product-card__price">225₽</b>
-            <button class="button product-card__button" href="#">В корзину</button>
+            <button class="button product-card__button" type="button">В корзину</button>
           </div>
         </article>
       </div>
@@ -400,14 +417,16 @@
       </div>
     </section>
     <article class="map-location">
+      <h2 class="visually-hidden">Карта с расположением офиса.</h2>
       <div id="map" style="min-height: 420px; min-width: 320px;">
-      <span class="map-location__nojs">
-        <picture>
-          <source meda="(min-width: 1280px)" srcset="img/map-nojs-desktop.png">
-          <source meda="(min-width: 768px)" srcset="img/map-nojs-tablet.png">
-        <img  src="img/map-nojs-mobile.png" width="320" height="420" alt="Санкт-Петербург, набережная реки Карповки, дом 5">
-        </picture>
-      </span>
+        <span class="map-location__nojs">
+          <picture>
+            <source media="(min-width: 1280px)" srcset="img/map-nojs-desktop.png">
+            <source media="(min-width: 768px)" srcset="img/map-nojs-tablet.png">
+            <img class="map-location__img" src="img/map-nojs-mobile.png" width="320" height="420"
+              alt="Санкт-Петербург, набережная реки Карповки, дом 5">
+          </picture>
+        </span>
       </div>
     </article>
   </main>
@@ -418,13 +437,14 @@
         <source media="(min-width: 768px)" srcset="img/logo-desktop.svg">
         <img class="social__logo" src="img/logo-tablet.svg" width="82" height="36" alt="Логотип компании">
       </picture>
+      <span class="social__logo-description">Интернет-магазин кофейных напитков</span>
       <ul class="social__list">
         <li class="social__item">
-          <a class="social__link" href="#">
+          <a class="social__link" href="https://vk.com/htmlacademy">
             <svg class="social__vk" width="20" height="20">
               <use xlink:href="img/sprite.svg#vk-icon"></use>
             </svg>
-            <span class="visually-hidden">Вконтакте</span>
+            <span class="visually-hidden">Вконтакте.</span>
           </a>
         </li>
         <li class="social__item">
@@ -433,15 +453,15 @@
               <use href="img/sprite.svg#pinterest-icon"></use>
             </svg>
 
-            <span class="visually-hidden">Пинтерест</span>
+            <span class="visually-hidden">Пинтерест.</span>
           </a>
         </li>
         <li class="social__item social__item--last">
           <a class="social__link" href="#">
-            <svg class="social__ok" width="20" height="20" ">
+            <svg class="social__ok" width="20" height="20">
               <use href=" img/sprite.svg#ok-icon"></use>
             </svg>
-            <span class="visually-hidden">Одноклассники</span>
+            <span class="visually-hidden">Одноклассники.</span>
           </a>
         </li>
       </ul>
@@ -482,10 +502,11 @@
         <h4 class="contacs__title">Контакты</h4>
         <ul class="contacs__list">
           <li class="contacs__item contacs__item--location">
-            <a class="contacs__link contacs__link--location" href="#"> Санкт-Петербург, набережная реки Карповки, дом 5 </a>
+            <a class="contacs__link contacs__link--location" href="#"> Санкт-Петербург, набережная реки Карповки, дом 5
+            </a>
           </li>
           <li class="contacs__item contacs__item--phone">
-            <a class="contacs__link contacs__link--location" href="#"> +7 (999) 999-99-99 </a>
+            <a class="contacs__link contacs__link--location" href="tel:+79999999999"> +7 (999) 999-99-99 </a>
           </li>
         </ul>
       </div>

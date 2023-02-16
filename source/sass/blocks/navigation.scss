@@ -1,7 +1,6 @@
 @use "../abstract" as *;
 
 .navigation {
-
   @media (min-width: $tablet-width) {
     grid-area: 1/2;
   }
@@ -17,7 +16,6 @@
     min-width: auto;
     padding: 34px 0;
   }
-
 }
 
 .navigation__container--open {
@@ -39,9 +37,10 @@
 }
 
 .navigation__container--nojs {
-  position: static;
   min-width: 100%;
   display: block;
+  margin-left: -300px;
+  margin-top: 30px;
 }
 
 .navigation__container--nojs .navigation__item {
@@ -72,7 +71,6 @@
     border: none;
     padding: 0;
   }
-
 }
 
 .navigation__link {
@@ -82,24 +80,22 @@
   font-size: 12px;
   line-height: 133%;
   letter-spacing: 0.02em;
-
 }
 
 .navigation__link--current {
- color: $purple;
- position: relative;
+  color: $purple;
+  position: relative;
 }
 
 .navigation__link--current::after {
-
   @media (min-width: $tablet-width) {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 103px;
-  height: 2px;
-  background-color: $purple;
-  top:49px;
-  right: -25px;
+    content: "";
+    position: absolute;
+    display: block;
+    width: 103px;
+    height: 2px;
+    background-color: $purple;
+    top: 49px;
+    right: -25px;
   }
 }

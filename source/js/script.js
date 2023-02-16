@@ -46,6 +46,7 @@ const swiper = new Swiper('.swiper', {
 
   pagination: {
     el: '.swiper-pagination',
+    clickable: true,
   },
 
 
@@ -53,6 +54,14 @@ const swiper = new Swiper('.swiper', {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
+
+  effect: 'fade',
+
+  fadeEffect: {
+
+    crossFade: true
+
+  }
 });
 
 // mobile-menu
@@ -61,9 +70,9 @@ let toggle = document.querySelector('.header__toggle-menu');
 let head = document.querySelector('.header__toggle-menu');
 
 nav.classList.remove('navigation__container--nojs');
-head.classList.remove('header--nojs');
+head.classList.remove('header__toggle-menu-nojs');
 
-toggle.addEventListener('click', function (){
+toggle.addEventListener('click', function () {
   if (nav.classList.contains('navigation__container--close')) {
     nav.classList.remove('navigation__container--close');
     nav.classList.add('navigation__container--open');
@@ -77,4 +86,3 @@ toggle.addEventListener('click', function (){
     toggle.classList.remove('header__toggle-menu--close');
   }
 })
-

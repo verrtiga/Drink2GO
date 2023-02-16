@@ -1,10 +1,20 @@
 @use "../sass/abstract" as *;
 
+.contacs {
+  @media (min-width: $desktop-width) {
+    display: flex;
+  }
+}
+
 .contacs-container {
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 29px;
   }
 }
 
@@ -25,7 +35,6 @@
 .contacs__list {
   list-style-type: none;
   margin: 0;
-  padding: 0;
   border-bottom: 1px solid $base;
   padding: 0 20px;
   margin-bottom: 28px;

@@ -6,6 +6,10 @@
   @media (min-width: $tablet-width) {
     margin-left: 304px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 652px;
+  }
 }
 
 .advantages__title {
@@ -22,7 +26,6 @@
     font-size: 42px;
     line-height: 152%;
   }
-
 }
 
 
@@ -37,7 +40,12 @@
     display: grid;
     margin-top: 60px;
     margin-left: 51px;
+  }
 
+  @media (min-width: $desktop-width) {
+    display: flex;
+    margin-top: 156px;
+    margin-bottom: 120px;
   }
 }
 
@@ -57,6 +65,10 @@
     text-align: left;
     margin-bottom: 10px;
   }
+
+  @media (min-width: $desktop-width) {
+    text-align: center;
+  }
 }
 
 .advantages__description {
@@ -72,6 +84,10 @@
     font-size: 16px;
     line-height: 150%;
     text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: center;
   }
 }
 
@@ -91,7 +107,7 @@
 .advantages__item--speed::before {
   content: "";
   position: absolute;
-  background-image: url(../../img/speed.svg);
+  background-image: url("../../img/speed.svg");
   width: 46px;
   height: 52px;
   bottom: 91px;
@@ -101,12 +117,17 @@
     left: -23px;
     bottom: 66px;
   }
+
+  @media (min-width: $desktop-width) {
+    left: 144px;
+    bottom: 153px;
+  }
 }
 
 .advantages__item--comfortable::before {
   content: "";
   position: absolute;
-  background-image: url(../../img/comfortable.svg);
+  background-image: url("../../img/comfortable.svg");
   width: 48px;
   height: 52px;
   bottom: 91px;
@@ -116,27 +137,37 @@
     left: -23px;
     bottom: 62px;
   }
+
+  @media (min-width: $desktop-width) {
+    left: 144px;
+    bottom: 135px;
+  }
 }
 
 .advantages__item--energy::before {
   content: "";
   position: absolute;
-  background-image: url(../../img/energy.svg);
+  background-image: url("../../img/energy.svg");
   width: 38px;
   height: 52px;
   bottom: 91px;
   left: 121px;
 
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     bottom: 91px;
     left: -23px;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 144px;
+    bottom: 153px;
   }
 }
 
 .advantages__item--eco::before {
   content: "";
   position: absolute;
-  background-image: url(../../img/eco.svg);
+  background-image: url("../../img/eco.svg");
   width: 42px;
   height: 52px;
   bottom: 91px;
@@ -147,4 +178,8 @@
     left: -23px;
   }
 
+  @media (min-width: $desktop-width) {
+    left: 144px;
+    bottom: 153px;
+  }
 }
