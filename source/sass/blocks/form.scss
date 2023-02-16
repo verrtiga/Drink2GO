@@ -5,7 +5,7 @@
 .main-form {
   @media (min-width: $tablet-width) {
     display: grid;
-    grid-template-columns: auto auto auto ;
+    grid-template-columns: auto auto auto;
     grid-template-rows: auto;
   }
 
@@ -24,7 +24,8 @@
   margin-left: 60px;
 
   @media (min-width: $tablet-width) {
-   margin-left: 132px;
+
+    margin-left: 132px;
   }
 }
 
@@ -220,15 +221,16 @@
   border-radius: 50%;
 
 }
-.form-stock__mark:hover{
+
+.form-stock__mark:hover {
   border: 2px solid $purple-light;
 }
 
-.form-stock__input[type=radio]:focus + .form-stock__mark {
+.form-stock__input[type=radio]:focus+.form-stock__mark {
   border-color: $purple;
 }
 
-.form-stock__input[type=radio]:checked + .form-stock__mark {
+.form-stock__input[type=radio]:checked+.form-stock__mark {
   border-color: $purple;
 }
 
@@ -258,7 +260,7 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 150%;
-  color:$black;
+  color: $black;
   margin-top: 21px;
 }
 
@@ -277,9 +279,9 @@
   -moz-appearance: none;
   appearance: none;
   transition: all 0.3s cubic-bezier(0.2, 0.85, 0.32, 1.2);
- }
+}
 
- .form-country__switch::after{
+.form-country__switch::after {
   content: "";
   display: inline-block;
   position: absolute;
@@ -291,12 +293,13 @@
   border-radius: 50%;
   transform: translateX(0);
   transition: all 0.3s cubic-bezier(0.2, 0.85, 0.32, 1.2);
- }
+}
 
- .form-country__switch:checked::after {
+.form-country__switch:checked::after {
   transform: translateX(calc(100% + -4px));
   background-color: $white;
 }
+
 .form-country__switch:checked {
   background-color: $purple;
 }
@@ -304,6 +307,3 @@
 .form-country__switch-label {
   margin-left: 12px;
 }
-
-
-

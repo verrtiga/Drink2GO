@@ -32,15 +32,19 @@
         <svg width="16" height="16">
           <use href="img/sprite.svg#login-icon"></use>
           <span class="header__login-desktop">Войти</span>
+          <span class="visually-hidden">Войти в меню.</span>
         </svg>
       </a>
       <a class="header__toggle-order" href="#">
         <svg width="16" height="16">
           <use href="img/sprite.svg#order-button"></use>
           <span class="header__order-desktop">Корзина</span>
+          <span class="visually-hidden">Войти в корзину.</span>
         </svg>
       </a>
-      <button class="header__toggle-menu header__toggle-menu--close header__toggle-menu-nojs" type="button"></button>
+      <button class="header__toggle-menu header__toggle-menu--close header__toggle-menu-nojs" type="button">
+        <span class=""visually-hidden">Открыть меню.</span>
+      </button>
     </div>
     <nav class="navigation">
       <div class="navigation__container navigation__container--open navigation__container--nojs">
@@ -111,8 +115,12 @@
             </div>
           </div>
           <div class="swiper-pagination swiper-pagination--disabled"></div>
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev">
+            <span class="visually-hidden">Предыдущий слайд.</span>
+          </div>
+          <div class="swiper-button-next">
+            <span class="visually-hidden">Следующий слайд.</span>
+          </div>
         </div>
         <div class="hero-section-container">
           <b class="badge badge--hero">Новинка!</b>
@@ -404,7 +412,7 @@
       </div>
     </section>
     <article class="map-location">
-      <h2 class="visually-hidden">Карта с расположением офиса</h2>
+      <h2 class="visually-hidden">Карта с расположением офиса.</h2>
       <div id="map" style="min-height: 420px; min-width: 320px;">
         <span class="map-location__nojs">
           <picture>
@@ -427,11 +435,11 @@
       <span class="social__logo-description">Интернет-магазин кофейных напитков</span>
       <ul class="social__list">
         <li class="social__item">
-          <a class="social__link" href="#">
+          <a class="social__link" href="https://vk.com/htmlacademy">
             <svg class="social__vk" width="20" height="20">
               <use xlink:href="img/sprite.svg#vk-icon"></use>
             </svg>
-            <span class="visually-hidden">Вконтакте</span>
+            <span class="visually-hidden">Вконтакте.</span>
           </a>
         </li>
         <li class="social__item">
@@ -440,7 +448,7 @@
               <use href="img/sprite.svg#pinterest-icon"></use>
             </svg>
 
-            <span class="visually-hidden">Пинтерест</span>
+            <span class="visually-hidden">Пинтерест.</span>
           </a>
         </li>
         <li class="social__item social__item--last">
@@ -448,7 +456,7 @@
             <svg class="social__ok" width="20" height="20">
               <use href=" img/sprite.svg#ok-icon"></use>
             </svg>
-            <span class="visually-hidden">Одноклассники</span>
+            <span class="visually-hidden">Одноклассники.</span>
           </a>
         </li>
       </ul>
@@ -493,7 +501,7 @@
             </a>
           </li>
           <li class="contacs__item contacs__item--phone">
-            <a class="contacs__link contacs__link--location" href="#"> +7 (999) 999-99-99 </a>
+            <a class="contacs__link contacs__link--location" href="tel:+79999999999"> +7 (999) 999-99-99 </a>
           </li>
         </ul>
       </div>
