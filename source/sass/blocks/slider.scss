@@ -77,3 +77,25 @@
     margin-bottom: 84px;
   }
 }
+
+.swiper-pagination {
+  @media (min-width: $desktop-width) {
+    bottom: -87px !important;
+  }
+}
+
+.swiper-pagination-bullet {
+  @media (min-width: $desktop-width) {
+    width: 62px !important;
+    height: 4px !important;
+    background-color: $white !important;
+    border-radius: 0 !important;
+    opacity: unset !important;
+  }
+}
+
+.swiper-pagination-bullet-active {
+  @media (min-width: $desktop-width) {
+    background-color: $purple !important;
+  }
+}

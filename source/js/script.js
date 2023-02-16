@@ -78,4 +78,3 @@ toggle.addEventListener('click', function (){
     toggle.classList.remove('header__toggle-menu--close');
   }
 })
-
