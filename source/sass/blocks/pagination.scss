@@ -45,7 +45,6 @@
   padding-top: 8px;
   margin-bottom: 40px;
   border-radius: 4px;
-
 }
 
 .pagination__link--current {
@@ -101,10 +100,9 @@
 .pagination__tablet--hidden {
   display: none;
 
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     display: block;
   }
-
 }
 
 .pagination__tablet {

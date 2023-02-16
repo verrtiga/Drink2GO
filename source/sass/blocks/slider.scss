@@ -21,7 +21,6 @@
   @media (min-width: $desktop-width) {
     top: 369px !important; // Аналогично, обращаюсь к important чтобы изменить параметр swiper
   }
-
 }
 
 .swiper-button-prev::after {
@@ -41,6 +40,8 @@
 }
 
 .swiper-button-next {
+  margin: 0;
+
   @media (min-width: $tablet-width) {
     top: 400px !important; // Аналогично, обращаюсь к important чтобы изменить параметр swiper
   }
@@ -50,9 +51,6 @@
   }
 }
 
-.swiper-button-next {
-  margin: 0;
-}
 
 .swiper-wrapper {
   padding: 0 20px;
@@ -66,7 +64,6 @@
     grid-area: 2/2;
     position: unset !important; // Аналогично, обращаюсь к important чтобы изменить параметр swiper
     width: 768px;
-
   }
 }
 
@@ -79,5 +76,4 @@
     margin-left: 53px;
     margin-bottom: 84px;
   }
-
 }

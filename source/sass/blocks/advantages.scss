@@ -8,7 +8,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 652px
+    margin-left: 652px;
   }
 }
 
@@ -26,7 +26,6 @@
     font-size: 42px;
     line-height: 152%;
   }
-
 }
 
 
@@ -41,7 +40,6 @@
     display: grid;
     margin-top: 60px;
     margin-left: 51px;
-
   }
 
   @media (min-width: $desktop-width) {
@@ -109,7 +107,7 @@
 .advantages__item--speed::before {
   content: "";
   position: absolute;
-  background-image: url(../../img/speed.svg);
+  background-image: url("../../img/speed.svg");
   width: 46px;
   height: 52px;
   bottom: 91px;
@@ -129,7 +127,7 @@
 .advantages__item--comfortable::before {
   content: "";
   position: absolute;
-  background-image: url(../../img/comfortable.svg);
+  background-image: url("../../img/comfortable.svg");
   width: 48px;
   height: 52px;
   bottom: 91px;
@@ -149,13 +147,13 @@
 .advantages__item--energy::before {
   content: "";
   position: absolute;
-  background-image: url(../../img/energy.svg);
+  background-image: url("../../img/energy.svg");
   width: 38px;
   height: 52px;
   bottom: 91px;
   left: 121px;
 
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     bottom: 91px;
     left: -23px;
   }
@@ -169,7 +167,7 @@
 .advantages__item--eco::before {
   content: "";
   position: absolute;
-  background-image: url(../../img/eco.svg);
+  background-image: url("../../img/eco.svg");
   width: 42px;
   height: 52px;
   bottom: 91px;
@@ -184,5 +182,4 @@
     left: 144px;
     bottom: 153px;
   }
-
 }

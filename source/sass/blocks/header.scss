@@ -13,7 +13,6 @@
     grid-template-columns: auto auto auto;
     padding-top: 0;
     padding-bottom: 0;
-
   }
 }
 
@@ -37,7 +36,7 @@
 
   @media (min-width: $desktop-width) {
     display: block;
-    font-family: 'Montserrat';
+    font-family: $montserrat;
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
@@ -57,7 +56,6 @@
   left: 105px;
   height: 24px;
   border: none;
-  cursor: pointer;
   background-color: transparent;
 
   @media (min-width: $tablet-width) {
@@ -72,8 +70,8 @@
   left: 10px;
   width: 16px;
   height: 1px;
-  background-color: #333;
-  box-shadow: 0 8px 0 0#333, 0 4px 0 0#333;
+  background-color: $black;
+  box-shadow: 0 8px 0 0#333333, 0 4px 0 0#333333;
 }
 
 .header__toggle-menu--open {
