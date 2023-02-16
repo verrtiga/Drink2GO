@@ -64,7 +64,7 @@
 
   @media (min-width: $tablet-width) {
     grid-area: 2/2;
-    position: unset !important;
+    position: unset !important; // Аналогично, обращаюсь к important чтобы изменить параметр swiper
     width: 768px;
 
   }
@@ -81,10 +81,3 @@
   }
 
 }
-//  .pagination-bullets {
-//   @media (min-width: $desktop-width) {
-//   width: 62px !important;
-//   height: 4px !important;
-//   background-color: $purple !important;
-//   }
-// }

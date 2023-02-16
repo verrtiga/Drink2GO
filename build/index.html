@@ -9,9 +9,9 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
     integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="" />
-  <link rel="preload" href="fonts/Montserrat-Regular.woff2" as="font">
-  <link rel="preload" href="fonts/montserratbold.woff2" as="font">
-  <link rel="preload" href="fonts/montserratsemibold.woff2" as="font">
+  <link rel="preload" href="fonts/Montserrat-Regular.woff2" as="font" crossorigin="">
+  <link rel="preload" href="fonts/Montserrat-Bold.woff2" as="font" crossorigin="">
+  <link rel="preload" href="fonts/Montserrat-SemiBold.woff2" as="font" crossorigin="">
 </head>
 
 <body class="page__body">
@@ -43,7 +43,7 @@
         </svg>
       </a>
       <button class="header__toggle-menu header__toggle-menu--close header__toggle-menu-nojs" type="button">
-        <span class=""visually-hidden">Открыть меню.</span>
+        <span class="visually-hidden">Открыть меню.</span>
       </button>
     </div>
     <nav class="navigation">
@@ -418,7 +418,7 @@
           <picture>
             <source media="(min-width: 1280px)" srcset="img/map-nojs-desktop.png">
             <source media="(min-width: 768px)" srcset="img/map-nojs-tablet.png">
-            <img src="img/map-nojs-mobile.png" width="320" height="420"
+            <img class="map-location__img" src="img/map-nojs-mobile.png" width="320" height="420"
               alt="Санкт-Петербург, набережная реки Карповки, дом 5">
           </picture>
         </span>

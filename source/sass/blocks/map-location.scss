@@ -1,0 +1,13 @@
+@use "../abstract" as *;
+
+.map-location__img {
+  @media (min-width: $tablet-width) {
+  width: 768px;
+  height: 480;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1440px;
+    height: 540px;
+  }
+}

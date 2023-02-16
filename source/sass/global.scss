@@ -48,6 +48,7 @@ body {
     margin-left: 263px;
     margin-top: 60px;
   }
+
   @media (min-width: $desktop-width) {
     margin-left: 0;
   }
@@ -59,9 +60,10 @@ body {
 
   @media (min-width: $desktop-width) {
     grid-area: 2/1;
-    width: 275px;
+    width: 262px;
     padding: 0px 20px;
   }
+
 }
 
 .html-academy {
@@ -93,6 +95,7 @@ body {
   @media (min-width: $tablet-width) {
     padding: 20px 49px;
   }
+
   @media (min-width: $desktop-width) {
     padding: 20px 27px;
   }
@@ -106,5 +109,5 @@ body {
   width: 12px;
   height: 16px;
   top: 0px;
-  left: 175px;
+  left: 195px;
 }
