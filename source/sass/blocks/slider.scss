@@ -80,22 +80,22 @@
 
 .swiper-pagination {
   @media (min-width: $desktop-width) {
-    bottom: -87px !important;
+    bottom: -87px !important; // Аналогично, обращаюсь к important чтобы изменить параметр swiper
   }
 }
 
 .swiper-pagination-bullet {
   @media (min-width: $desktop-width) {
-    width: 62px !important;
-    height: 4px !important;
-    background-color: $white !important;
-    border-radius: 0 !important;
-    opacity: unset !important;
+    width: 62px !important; // Аналогично, обращаюсь к important чтобы изменить параметр swiper
+    height: 4px !important; // Аналогично, обращаюсь к important чтобы изменить параметр swiper
+    background-color: $white !important; // Аналогично, обращаюсь к important чтобы изменить параметр swiper
+    border-radius: 0 !important; // Аналогично, обращаюсь к important чтобы изменить параметр swiper
+    opacity: unset !important; // Аналогично, обращаюсь к important чтобы изменить параметр swiper
   }
 }
 
 .swiper-pagination-bullet-active {
   @media (min-width: $desktop-width) {
-    background-color: $purple !important;
+    background-color: $purple !important; // Аналогично, обращаюсь к important чтобы изменить параметр swiper
   }
 }

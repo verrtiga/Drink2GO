@@ -54,6 +54,14 @@ const swiper = new Swiper('.swiper', {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
+
+  effect: 'fade',
+
+  fadeEffect: {
+
+    crossFade: true
+
+  }
 });
 
 // mobile-menu
@@ -64,7 +72,7 @@ let head = document.querySelector('.header__toggle-menu');
 nav.classList.remove('navigation__container--nojs');
 head.classList.remove('header--nojs');
 
-toggle.addEventListener('click', function (){
+toggle.addEventListener('click', function () {
   if (nav.classList.contains('navigation__container--close')) {
     nav.classList.remove('navigation__container--close');
     nav.classList.add('navigation__container--open');

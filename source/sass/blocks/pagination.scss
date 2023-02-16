@@ -45,6 +45,26 @@
   padding-top: 8px;
   margin-bottom: 40px;
   border-radius: 4px;
+  outline: none;
+}
+
+.pagination__link:hover {
+  background-color: $purple-light;
+  color: $white;
+}
+
+.pagination__link:focus {
+  background-color: $purple-light;
+  color: $white;
+}
+
+.pagination__link:active {
+  background-color: $purple-dark;
+  color: $white;
+}
+
+.pagination__link:disabled {
+  background-color: $grey;
 }
 
 .pagination__link--current {
@@ -126,5 +146,25 @@
     margin-bottom: 40px;
     padding: 8px 20px;
     border-radius: 4px;
+    outline: none;
   }
+}
+
+.pagination__tablet:hover {
+  background-color: $purple-light;
+  color: $white;
+}
+
+.pagination__tablet:focus {
+  background-color: $purple-light;
+  color: $white;
+}
+
+.pagination__tablet:active {
+  background-color: $purple-dark;
+  color: $white;
+}
+
+.pagination__tablet:disabled {
+  background-color: $grey;
 }

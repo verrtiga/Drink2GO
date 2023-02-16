@@ -28,6 +28,11 @@
 
     margin-left: 132px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    margin-top: 102px;
+  }
 }
 
 .main-form__reset {
